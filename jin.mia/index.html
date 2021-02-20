@@ -1,2 +1,119 @@
-Hello There
-test test mia mia
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Products Web</title>
+
+   <link rel="stylesheet" href="lib/css/styleguide.css">
+   <link rel="stylesheet" href="css/storetheme.css">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+</head>
+<body>
+   
+   <!-- header>h1+p -->
+   <!-- cmd + / -->
+   <header class="navbar">
+      <div class="container display-flex flex-align-center" style="margin-top: 0">
+         <div class="flex-none">
+            <h1>Mia's Products</h1>
+         </div>
+
+         <div class="flex-stretch"></div>
+
+         <!-- nav.nav>ul>li*4>a[href=#article$]>{Link $} -->
+         <!-- <nav class="nav flex-none"> -->
+            <ul class="display-flex">
+               <li><a href="#product1">Product 1</a></li>
+               <li><a href="#product2">Product 2</a></li>
+               <li><a href="#product3">Product 3</a></li>
+               <li><a href="#product4">Product 4</a></li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+
+
+   <!-- .container>article#article$.article*4>h2{Article $}+div.article-body>p*4>lorem40 -->
+   <div class="container display-flex">
+      <article id="product1" class="product card top soft" style="background-image:url(img/product1.jpg)">
+        <!--  <h2>Product 1</h2>
+         <div class="article-body">
+            <p>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Dicta odio consequuntur, doloribus error minima veniam, eos perferendis explicabo esse illum dignissimos nesciunt sed, laudantium quidem aliquam et, possimus harum quisquam! Eum dicta, adipisci! Ratione nemo sed quo iusto unde atque?</p>
+         </div>  --> 
+      </article>
+
+      <article id="product2" class="product card top soft" style="background-image:url(img/product2.jpg)">
+         <!-- <h2>Product 2</h2>
+         <div class="article-body">
+            <p>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Dicta odio consequuntur, doloribus error minima veniam, eos perferendis explicabo esse illum dignissimos nesciunt sed, laudantium quidem aliquam et, possimus harum quisquam! Eum dicta, adipisci! Ratione nemo sed quo iusto unde atque?</p>
+         </div>  --> 
+      </article>
+
+      <article id="product3" class="product card top soft" style="background-image:url(img/product3.jpg)">
+         <!-- <h2>Product 3</h2>
+         <div class="article-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus deleniti aperiam sunt. Nam nihil iure ipsa consequatur cum aliquid at. Maxime quisquam, animi tempore. Enim ea quia, quos eligendi ullam praesentium tempora, ipsa esse, excepturi eius, dignissimos iure? A, eum.</p>
+         </div>  -->
+      </article>
+   </div>
+
+   <div class="container display-flex flex-space-around" style="margin-top: 1em">
+   	<a href="#" class="button">ADD TO CART</a>
+   	<a href="#" class="button">ADD TO CART</a>
+   	<a href="#" class="button">ADD TO CART</a>
+   </div>
+
+      <div class="view-window display-flex flex-align-center flex-justify-center" style="background-image:url(img/background.jpg)">
+         <h2 >NATRUAL & FRESH</h2>
+      </div>
+
+   <div class="container display-flex">
+      
+      <article id="product4" class="product card bottom soft" style="background-image:url(img/product4.jpg)">
+         <!-- <h2>Product 4</h2> -->
+         <!-- <div class="article-body">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore saepe laborum dicta, asperiores ex nihil id, enim sapiente corrupti debitis eum ducimus non, praesentium cum. Doloremque quisquam natus, inventore unde aut, libero pariatur. Molestiae, fuga maiores, error iusto atque deserunt.</p>
+            <p>Neque, dicta. Numquam, aut at quis minima optio dicta eius minus earum veritatis obcaecati deserunt molestiae vitae dolor aliquam ex aliquid architecto tempore itaque quae quod a! Autem dolores, harum nemo perspiciatis laboriosam beatae rem minima quam repellendus eum temporibus.</p>
+            <p>Dolorem, recusandae, quos quas qui maiores voluptas repellendus in! Eaque et dolorum, animi? Quas architecto optio excepturi! Inventore obcaecati consectetur, repudiandae ratione quaerat dolores esse at maxime impedit assumenda alias, qui perferendis, minus necessitatibus magnam asperiores dolorem? Numquam provident, deleniti!</p>
+            <p>Necessitatibus deleniti labore iste nam nobis voluptatem accusamus, modi qui non mollitia reiciendis natus sint veniam maxime provident dolore fugit asperiores unde eos nesciunt velit? Atque similique voluptatem, est delectus, explicabo consequatur autem, impedit, recusandae unde quae laboriosam libero repellendus?</p>
+         </div> -->
+      </article>
+
+      <article id="product5" class="product card bottom soft" style="background-image:url(img/product5.jpg)">
+         <!-- <h2>Product 5</h2>
+         <div class="article-body"> -->
+         <!--    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore saepe laborum dicta, asperiores ex nihil id, enim sapiente corrupti debitis eum ducimus non, praesentium cum. Doloremque quisquam natus, inventore unde aut, libero pariatur. Molestiae, fuga maiores, error iusto atque deserunt.</p>
+            <p>Neque, dicta. Numquam, aut at quis minima optio dicta eius minus earum veritatis obcaecati deserunt molestiae vitae dolor aliquam ex aliquid architecto tempore itaque quae quod a! Autem dolores, harum nemo perspiciatis laboriosam beatae rem minima quam repellendus eum temporibus.</p>
+            <p>Dolorem, recusandae, quos quas qui maiores voluptas repellendus in! Eaque et dolorum, animi? Quas architecto optio excepturi! Inventore obcaecati consectetur, repudiandae ratione quaerat dolores esse at maxime impedit assumenda alias, qui perferendis, minus necessitatibus magnam asperiores dolorem? Numquam provident, deleniti!</p>
+            <p>Necessitatibus deleniti labore iste nam nobis voluptatem accusamus, modi qui non mollitia reiciendis natus sint veniam maxime provident dolore fugit asperiores unde eos nesciunt velit? Atque similique voluptatem, est delectus, explicabo consequatur autem, impedit, recusandae unde quae laboriosam libero repellendus?</p>
+         </div> -->
+      </article>
+   </div>
+
+    <div class="container display-flex flex-space-around" style="margin-top: 1em">
+   	<a href="#" class="button">LEARN MORE</a>
+   	<a href="#" class="button">LEARN MORE</a>
+   	</div>
+
+    <div class="view-window1 display-flex flex-align-center flex-justify-center" style="background-image:url(img/ad.jpg)">
+    	
+    </div>
+    
+      
+
+
+   <div class="container display-flex">
+      
+      <article id="product6" class="product card bottom soft" style="background-image:url(img/product6.jpg)"></article>
+      <article id="product7" class="product card bottom soft" style="background-image:url(img/product7.jpg)"></article>
+   </div>
+
+  <div class="container display-flex flex-space-around" style="margin-top: 1em">
+   	<a href="#" class="button">LEARN MORE</a>
+   	<a href="#" class="button">LEARN MORE</a>
+   	</div>
+</body>
+</html>

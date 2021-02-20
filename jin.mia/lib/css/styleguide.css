@@ -1,0 +1,156 @@
+/* CSS RESETS */
+
+*, *::before, *::after {
+   box-sizing:border-box;
+}
+
+:root {
+   --color-neutral-light: #e9e2e5;
+   --color-neutral-medium: #89a192;
+   --color-neutral-dark: #3c4f43;
+
+   --color-white: #fff;
+   --color-black: #111;
+
+
+   --header-height: 3rem;
+
+
+   --font-sans: 'Varela Round', sans-serif;
+   --font-serif: 'DM Serif Display', serif;
+}
+
+body {
+   margin: 0;
+   font-size: 100%;
+   font-family: var(--font-sans);
+}
+
+h1 {
+	color: var(--color-white);
+}
+h2 {
+	text-align: center;
+	color: var(--color-neutral-dark);
+	font-family:var(--font-serif);
+	font-size: 2em;
+}
+h3,
+h4,
+h5,
+h6 {
+   font-family:var(--font-serif);
+}
+
+a {
+   color:inherit;
+   font-weight:bold;
+   text-decoration:none;
+}
+a:hover {
+   color: var(--color-neutral-medium);
+}
+
+
+
+
+/* LAYOUT CLASSES */
+.container {
+   max-width:1200px;
+   margin-left:auto;
+   margin-right:auto;
+   margin-top: 4em;
+}
+
+
+.hidden { display:none; }
+
+
+.display-flex { display:flex; }
+.display-block { display:block; }
+.display-inline-flex { display:inline-flex; }
+.display-inline-block { display:inline-block; }
+
+.flex-stretch { flex: 1 1 auto; }
+.flex-none { flex: none; }
+
+.flex-align-center { align-items:center; }
+.flex-justify-center { justify-content:center; }
+.flex-space-around {justify-content: space-around;}
+
+
+
+
+/* COMPONENT CLASSES */
+
+.navbar {
+   background-color:var(--color-neutral-dark);
+   color:var(--color-white);
+   line-height:var(--header-height);
+}
+.navbar h1 {
+   font-family:var(--font-sans);
+   font-size:1em;
+   margin:0;
+}
+
+.nav ul,
+.navbar ul {
+   list-style-type:none;
+   margin:0;
+   padding-left:0;
+}
+
+.navbar a {
+   display:block;
+   padding:0 0.5em;
+}
+
+
+
+/* VIEW WINDOW */
+
+.view-window {
+   position:relative;
+   overflow:hidden;
+   background-size:cover;
+   background-position:center;
+   background-attachment:fixed;
+   height:70vh;
+   margin-top: 4em;
+}
+
+
+
+
+
+/* CARD */
+
+.card {
+   background-color:var(--color-white);
+   padding:2em;
+   margin: 2em;
+
+   position:relative;
+   overflow:hidden;
+}
+
+   .card.soft {
+      border-radius:0.5em;
+      box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+   }
+   .card.hard {
+      border-radius:0.2em;
+      border:2px solid var(--color-neutral-medium);
+   }
+   .card.dark {
+      background-color:var(--color-neutral-dark);
+      color:var(--color-white);
+   }
+   .card.medium {
+      background-color:var(--color-neutral-medium);
+   }
+
+   .card.flat {
+      padding:0;
+   }
