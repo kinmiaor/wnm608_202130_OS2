@@ -29,14 +29,28 @@ body {
 h1 {
 	color: var(--color-white);
 }
+
 h2 {
 	text-align: center;
 	color: var(--color-neutral-dark);
 	font-family:var(--font-serif);
 	font-size: 2em;
 }
-h3,
-h4,
+h3 {
+   font-family: var(--font-serif);
+   font-size: 2em;
+   text-align: left;
+   line-height: 1.5em;
+   color: var(--color-neutral-dark);
+}
+
+h4 {
+   font-family: var(--font-serif);
+   font-size: 1.2em;
+   text-align: left;
+   line-height: 1.5em;
+   color: var(--color-neutral-dark);
+}
 h5,
 h6 {
    font-family:var(--font-serif);
@@ -116,8 +130,8 @@ a:hover {
    background-size:cover;
    background-position:center;
    background-attachment:fixed;
-   height:70vh;
-   margin-top: 4em;
+   height:60vh;
+   /*margin-top: 4em;*/
 }
 
 
@@ -153,4 +167,7 @@ a:hover {
 
    .card.flat {
       padding:0;
+   }
+   .card.none {
+      background-color: #e8edea;
    }
