@@ -6,7 +6,9 @@
    <title>Products Web</title>
 
    <link rel="stylesheet" href="lib/css/styleguide.css">
+   <link rel="stylesheet" href="lib/css/gridsystem.css">
    <link rel="stylesheet" href="css/storetheme.css">
+   
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 
@@ -25,7 +27,8 @@
 
          <!-- nav.nav>ul>li*4>a[href=#article$]>{Link $} -->
          <!-- <nav class="nav flex-none"> -->
-            <ul class="display-flex">
+            <nav>
+            <ul class="hide display-flex">
                <li><a href="#product1">Skincare</a></li>
                <li><a href="#product2">Bodywash</a></li>
                <li><a href="#product3">Hair</a></li>
@@ -35,39 +38,43 @@
       </div>
    </header>
 
-   <div class="view-window display-flex flex-align-center flex-justify-center" style="background-image:url(img/background.jpg)">
-         <h2 >NATRUAL & FRESH</h2>
+   <div class="view-window display-flex flex-align-center flex-justify-center window-shrink" style="background-image:url(img/background.jpg)">
+         <h2 class="h2-shrink" >NATRUAL & FRESH</h2>
    </div>
 
-   <div class="container display-flex flex-justify-center">
+   <div class="container display-flex flex-justify-center hide">
     <p>We believe in healthy skin. To us that means listening to its cravings. Your skin will tell you what it need, and we'll tell you what works.</p>
    </div>
  
-   <div class="containerbutton display-flex flex-justify-center">
+   <div class="containerbutton display-flex flex-justify-center button-shrink">
    <a href="#" class="bigbutton">SHOP NOW</a>
    </div>
 
 
    <!-- .container>article#article$.article*4>h2{Article $}+div.article-body>p*4>lorem40 -->
-   <div class="container display-flex">
-      <article id="product1" class="product card top soft" style="background-image:url(img/product1.jpg)">
-       
-      </article>
+   <div class="containerwide">
+      <div class="grid">
+      
+      <div class="product card top soft col-sm-12 col-md-4" style="background-image:url(img/product1.jpg)"></div>
+      
+      <div class="product card top soft col-sm-12 col-md-4" style="background-image:url(img/product2.jpg) "></div>
 
-      <article id="product2" class="product card top soft" style="background-image:url(img/product2.jpg)">
-         
-      </article>
-
-      <article id="product3" class="product card top soft" style="background-image:url(img/product3.jpg)">
+      <div class="product card top soft col-sm-12 col-md-4" style="background-image:url(img/product3.jpg)"></div>
         
-      </article>
+      </div>
    </div>
 
-   <div class="container display-flex flex-space-around" style="margin-top: 1em">
-   	<a href="#" class="button">ADD TO CART</a>
-   	<a href="#" class="button">ADD TO CART</a>
-   	<a href="#" class="button">ADD TO CART</a>
+   <div class="containerwide grid-justify-around hide" style="margin-top: 1em">
+      <div class="grid">
+       <div class="col-md-1"></div>
+      <a href="#" class="button col-sm-12 col-md-2">ADD TO CART</a>
+      <div class="col-md-2"></div>
+      <a href="#" class="button col-sm-12 col-md-2">ADD TO CART</a>
+      <div class="col-md-2"></div>
+      <a href="#" class="button col-sm-12 col-md-2">ADD TO CART</a>
+      <div class="col-md-1"></div>
    </div>
+</div>
 
    
    <div class="container display-flex">
@@ -85,12 +92,12 @@
    </div>
 
    <!--  <div class="container display-flex flex-space-around" style="margin-top: 1em">
-   	<a href="#" class="button">LEARN MORE</a>
-   	<a href="#" class="button">LEARN MORE</a>
-   	</div> -->
+      <a href="#" class="button">LEARN MORE</a>
+      <a href="#" class="button">LEARN MORE</a>
+      </div> -->
 
     <div class="view-window1 display-flex flex-align-center flex-justify-center" style="background-image:url(img/ad.jpg)">
-    	
+      
     </div>
     
       
@@ -105,12 +112,12 @@
    </div>
 
   <div class="containerwide display-flex flex-space-around" style="margin-top: 1em">
-   	<a href="#" class="button">ADD TO CART</a>
-   	<a href="#" class="button">ADD TO CART</a>
       <a href="#" class="button">ADD TO CART</a>
       <a href="#" class="button">ADD TO CART</a>
       <a href="#" class="button">ADD TO CART</a>
-   	</div>
+      <a href="#" class="button">ADD TO CART</a>
+      <a href="#" class="button">ADD TO CART</a>
+      </div>
 
    
     <div class="view-window1 display-flex flex-align-center flex-justify-center" style="background-image:url(img/ad3.jpg)">

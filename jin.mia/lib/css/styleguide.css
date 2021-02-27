@@ -27,14 +27,14 @@ body {
 }
 
 h1 {
-	color: var(--color-white);
+   color: var(--color-white);
 }
 
 h2 {
-	text-align: center;
-	color: var(--color-neutral-dark);
-	font-family:var(--font-serif);
-	font-size: 2em;
+   text-align: center;
+   color: var(--color-neutral-dark);
+   font-family:var(--font-serif);
+   font-size: 2em;
 }
 h3 {
    font-family: var(--font-serif);
@@ -92,8 +92,10 @@ a:hover {
 .flex-justify-center { justify-content:center; }
 .flex-space-around {justify-content: space-around;}
 
-
-
+.grid-justify-around {justify-content: space-around;}
+.grid-justify-between {justify-content: space-between;}
+.grid-justify-center {justify-content: center;}
+.grid-justify-evenly {justify-content: space-evenly;}
 
 /* COMPONENT CLASSES */
 
@@ -101,6 +103,7 @@ a:hover {
    background-color:var(--color-neutral-dark);
    color:var(--color-white);
    line-height:var(--header-height);
+
 }
 .navbar h1 {
    font-family:var(--font-sans);
@@ -116,22 +119,24 @@ a:hover {
 }
 
 .navbar a {
-   display:block;
+   
    padding:0 0.5em;
 }
+
 
 
 
 /* VIEW WINDOW */
 
 .view-window {
+   
    position:relative;
    overflow:hidden;
    background-size:cover;
    background-position:center;
    background-attachment:fixed;
    height:60vh;
-   /*margin-top: 4em;*/
+ 
 }
 
 
@@ -144,7 +149,6 @@ a:hover {
    background-color:var(--color-white);
    padding:2em;
    margin: 2em;
-
    position:relative;
    overflow:hidden;
 }
@@ -171,3 +175,24 @@ a:hover {
    .card.none {
       background-color: #e8edea;
    }
+.card>:first-child { margin-top:0; }
+.card>:last-child { margin-bottom:0; }
+
+
+/* WELL */
+.well {
+   background-color:var(--color-neutral-light);
+   padding:0.5em;
+   border-radius:0.2em;
+}
+
+
+
+
+
+
+
+
+
+
+
