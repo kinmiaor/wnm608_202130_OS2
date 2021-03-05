@@ -6,7 +6,7 @@
 
 - http://kinmiaor.com
 - http://kinmiaor.com/aau/wnm608/jin.mia
-- http://kinmiaor.com/aau/wnm608/jin.mia/css/styleguide.css
+- http://kinmiaor.com/aau/wnm608/jin.mia/styleguide
 - http://kinmiaor.com/aau/wnm608/jin.mia/recipes/index.html
 
 
