@@ -23,7 +23,9 @@ body {
   text-align: center;
  
 }
-
+.center {
+  text-align: center;
+}
 .button:hover {
   background-color: var(--color-neutral-dark);
   color: var( --color-white);
