@@ -1,7 +1,7 @@
 :root {
-   --color-neutral-light:#d1e6d9;
-   --color-neutral-medium:#89a192;
-   --color-neutral-dark:#3c4f43;
+   --color-main-light:#d1e6d9;
+   --color-main-medium:#89a192;
+   --color-main-dark:#3c4f43;
 }
 
 
@@ -11,7 +11,7 @@ body {
 }
 
 .button {
-  background-color: var(--color-neutral-medium);
+  background-color: var(--color-main-medium);
   border:none;
   color: var( --color-white);
   padding: 10px 16px;
@@ -27,13 +27,13 @@ body {
   text-align: center;
 }
 .button:hover {
-  background-color: var(--color-neutral-dark);
+  background-color: var(--color-main-dark);
   color: var( --color-white);
   
 }
 
 .bigbutton {
-  background-color: var(--color-neutral-medium);
+  background-color: var(--color-main-medium);
   border: none;
   color: var( --color-white);
   padding: 10px 64px;
@@ -46,7 +46,24 @@ body {
   margin-right: auto;
 }
 .bigbutton:hover {
-  background-color: var(--color-neutral-dark);
+  background-color: var(--color-main-dark);
+  color: var( --color-white);
+}
+.borderbutton {
+  background-color: none;
+  border: 1px solid #3c4f43;
+  color: var( --color-main-dark);
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 0.8em;
+  margin: 2em;
+  margin-bottom: 2em;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.borderbutton:hover {
+  background-color: var(--color-main-dark);
   color: var( --color-white);
 }
 
@@ -90,7 +107,7 @@ body {
 
 p {
   font-size: 1.5em;
-  color: var(--color-neutral-dark);
+  color: var(--color-main-dark);
   text-align: center;
   font-family: var( --font-serif);
 
@@ -118,11 +135,13 @@ p {
   .image-change{ background-image: url("img/ad.jpg");}
 }*/
 
+
+
 /*@media (max-width:750px) {
 .text-shrink{
     font-size: 1em;};*/
     
-}
+
 
 /*
 @media (max-width:750px) {
@@ -131,4 +150,33 @@ p {
 }
 
 */
+
+.circlelight {
+  height: 20px;
+  width: 20px;
+  background-color: var(--color-main-light);
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.circlemedium {
+  height: 20px;
+  width: 20px;
+  background-color: var(--color-main-medium);
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.circledark {
+  height: 20px;
+  width: 20px;
+  background-color: var(--color-main-dark);
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
 
