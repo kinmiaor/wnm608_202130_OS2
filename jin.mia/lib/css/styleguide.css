@@ -6,9 +6,9 @@
 
 :root {
   --color-neutral-lighter:#f0f0f2;
-   --color-neutral-light:#e4e2e9;
-   --color-neutral-medium:#8c8894;
-   --color-neutral-dark:#423f4a;
+   --color-neutral-light:#e8e8e8;
+   --color-neutral-medium:#ababab;
+   --color-neutral-dark:#666666;
 
    --color-white: #fff;
    --color-black: #111;
@@ -32,7 +32,7 @@ body {
 .brand {
    color: var(--color-white);
    font-family:var(--font-serif);
-   font-size: 1.5em;
+   font-size: 1.2em;
 }
 
 h1 {
@@ -69,7 +69,7 @@ h5 {
    color: var(--color-main-dark);
    font-size: 1em;
    text-align: center;
-   line-height: 0.5em;
+   line-height: 1.5em;
 }
 h6 {
    font-family:var(--font-serif);
@@ -77,7 +77,7 @@ h6 {
    font-size: 0.8em;
    font-weight: lighter;
    text-align: center;
-   line-height: 0em;
+   line-height: 1.5em;
 }
 
 a {
@@ -165,11 +165,33 @@ a:hover {
       margin:0 0.5em;
    }
 
-   .nav-vertical {
+   
+   .sidenav {
+      height: 100vh;
+      width: 18vw;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      overflow-x: hidden;
+      padding-top: 20px;
+ }
+ .sidenav a {
+   padding: 0.5em 0.5em 0.5em 3em;
+   display: block;
+   text-align: left;
+
+ }
+
+
+.main {
+   margin-left: 18vw;
+}
+.nav-vertical {
       background-color: var(--color-main-dark);
       color: var(--color-white);
-      text-align: center;
-      border-radius: 0.5em;
+      text-align: left;
+      
 
    }
 
@@ -182,7 +204,7 @@ a:hover {
 }
 .navbar h1{
    font-family:var( --font-serif);
-   font-size:1em;
+   font-size: 0,8em;
    margin:0;
 }
 
@@ -235,14 +257,14 @@ a:hover {
    }
    .card.hard {
       border-radius:0.2em;
-      border:2px solid var(--color-main-medium);
+      border:2px solid var(--color-neutral-medium);
    }
    .card.dark {
-      background-color:var(--color-main-dark);
+      background-color:var(--color-neutral-dark);
       color:var(--color-white);
    }
    .card.medium {
-      background-color:var(--color-main-medium);
+      background-color:var(--color-neutral-medium);
    }
 
    .card.flat {
@@ -257,7 +279,7 @@ a:hover {
 
 /* WELL */
 .well {
-   background-color:var(--color-main-dark);
+   background-color:var(--color-neutral-light);
    padding:0.5em;
    border-radius:0.2em;
 }
@@ -276,7 +298,7 @@ a:hover {
 }
 
 .table.striped tbody tr:nth-child(odd) {
-   background-color:var(--color-neutral-light);
+   background-color:#e8edea;
 }
 
 
@@ -312,11 +334,12 @@ a:hover {
    display:inline-block;
    width:100%;
    border-width:0;
-   background-color:var(--color-neutral-lighter);
-   padding:0.5em 1em;
+   background-color:#e8edea;
+   padding: 0.3em 0.8em;
    border-radius:0.3em;
    font:inherit;
    outline:0;
+   font-size: 0.8em;
    -webkit-appearance:none;
 }
 .form-button+.form-button,
@@ -327,13 +350,14 @@ a:hover {
 .form-input-lined {
    display:inline-block;
    width:100%;
-   padding:0.5em 1em;
+   padding:0.3em 0.8em;
    font:inherit;
    outline:0;
    background-color:transparent;
    border-radius:0;
    border-width:0;
    border-bottom:1px solid var(--color-neutral-medium);
+   font-size: 0.8em;
    -webkit-appearance:none;
 }
 .form-input-lined:focus {
@@ -382,11 +406,12 @@ a:hover {
    display:inline-flex;
    width:100%;
    border-width:0;
-   background-color:var(--color-neutral-light);
-   padding:0.5em 1em;
+   background-color:#e8edea;
+   padding:0.3em 0.8em;
    border-radius:2em;
    font:inherit;
    outline:0;
+   font-size: 0.8em;
    -webkit-appearance:none;
 }
 .hotdog input {
@@ -409,13 +434,14 @@ a:hover {
    display:inline-block;
    width:100%;
    border-width:0;
-   background-color:var(--color-neutral-light);
-   padding:0.5em 2em 0.5em 1em;
+   background-color: #e8edea;
+   padding:0.3em 1.6em 0.3em 0.8em;
    border-radius:0.3em;
    font:inherit;
    outline:0;
    position:relative;
    overflow:hidden;
+   font-size: 0.8em;
    -webkit-appearance:none;
 }
 .form-select::after {
@@ -429,7 +455,6 @@ a:hover {
    pointer-events:none;
    transform: translateY(-50%);
 }
-
 
 
 

@@ -2,6 +2,7 @@
    --color-main-light:#d1e6d9;
    --color-main-medium:#89a192;
    --color-main-dark:#3c4f43;
+
 }
 
 
@@ -64,6 +65,43 @@ body {
 
 .borderbutton:hover {
   background-color: var(--color-main-dark);
+  color: var( --color-white);
+}
+
+.roundbutton{
+  background-color: var(--color-main-medium);
+  border: none;
+  color: var( --color-white);
+  padding: 10px 64px;
+  text-decoration: none;
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: 2em;
+  border-radius: 4em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.roundbutton:hover {
+  background-color: var(--color-main-dark);
+  color: var( --color-white);
+  
+}
+
+.darkbutton {
+  background-color: var(--color-main-dark);
+  border: none;
+  color: var( --color-white);
+  padding: 10px 64px;
+  text-decoration: none;
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: 2em;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.darkbutton:hover {
+  background-color: var(--color-main-medium);
   color: var( --color-white);
 }
 
@@ -173,6 +211,54 @@ p {
   height: 20px;
   width: 20px;
   background-color: var(--color-main-dark);
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+
+.neutrallight {
+  height: 20px;
+  width: 20px;
+  background-color: var(--color-neutral-light);
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.neutralmedium {
+  height: 20px;
+  width: 20px;
+  background-color: var(--color-neutral-medium);
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.neutraldark {
+  height: 20px;
+  width: 20px;
+  background-color: var(--color-neutral-dark);
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.white {
+  height: 20px;
+  width: 20px;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 10px;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+}
+.black {
+  height: 20px;
+  width: 20px;
+  background-color: var(--color-black);
   border-radius: 50%;
   display: inline-block;
   margin-right: 20px;

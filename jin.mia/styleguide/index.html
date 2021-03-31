@@ -12,7 +12,7 @@
    <link rel="stylesheet" href="css/storetheme.css">
 </head>
 <body>
-  <header class="navbar">
+ <!--  <header class="navbar">
      <div class="container display-flex flex-align-center" style="margin-top: 0">
          <div class="flex-none">
             <div class="brand">Styleguide</div>
@@ -23,9 +23,22 @@
          </nav>
       </div>
    </header>
+ -->
 
+  <div class="sidenav nav-vertical">
+          
+           <a href="styleguide/#color">Color</a>
+           <a href="styleguide/#typography">Typography</a>
+           <a href="styleguide/#button">Button</a>
+           <a href="styleguide/#grid">Grid</a>
+           <a href="styleguide/#viewwindow">View Window</a></li>
+           <a href="styleguide/#card">Card</a></li>
+           <a href="styleguide/#navigations">Navigations</a>
+           <a href="styleguide/#forms">Forms</a>
+           <a href="styleguide/#layout">Product Figure and Layout</a>
+</div>
 
-   <div class="container">
+   <!-- <div class="container">
       <div class="card soft">
          <h3 style="background-color: #89a192">Table of Contents</h3>
 
@@ -37,8 +50,27 @@
             <li><a href="styleguide/#card">Card</a></li>
             <li><a href="styleguide/#navigations">Navigations</a></li>
             <li><a href="styleguide/#forms">Forms</a></li>
+            <li><a href="styleguide/#layout">Product Figure and Layout</a></li>
+
          </ul>
       </div>
+   </div>
+ -->
+   <div class="main">
+  
+  <div class="container" id="color">
+      <div class="card soft">
+         <h3 style="background-color: #89a192">Color</h3>
+         <div class="grid grid-justify-around">
+         <div class="col-sm-12 col-md-4" ><span class="circlelight"></span>Color Main Light:#d1e6d9</div>
+         <div class="col-sm-12 col-md-4" ><span class="circlemedium"></span>Color Main Medium:#89a192</div>
+         <div class="col-sm-12 col-md-4" ><span class="circledark"></span>Color Main Dark:#3c4f43</div>
+         <div class="col-sm-12 col-md-4" ><span class="neutrallight"></span>Color Neutral Light:#e8e8e8</div>
+         <div class="col-sm-12 col-md-4" ><span class="neutralmedium"></span>Color Neutral Medium:#ababab</div>
+         <div class="col-sm-12 col-md-4" ><span class="neutraldark"></span>Color Neutral Dark:#666666</div>
+         <div class="col-sm-12 col-md-4" ><span class="black"></span>Color Black:#111</div>
+         <div class="col-sm-12 col-md-4" ><span class="white"></span>Color White:#fff</div>
+        </div>
    </div>
 
    <div class="container" id="typography">
@@ -84,7 +116,7 @@
          </div>
       </div>
       </div>
-   </div>
+ 
 
    <div class="container" id="button">
       <div class="card soft">
@@ -100,21 +132,24 @@
         <div class="col-sm-12 col-md-4" >
             <div class="center"><a href="#" class="borderbutton">Button 2</a></div>
         </div>
+
       </div>
+
+      <div class="grid" style="margin-top: 3em">
+        <div class="col-sm-12 col-md-4" >
+            <div class="center"><a href="#" class="roundbutton">Button 3</a></div>
+        </div>
+        <div class="col-sm-12 col-md-4" >
+            <div class="center"><a href="#" class="darkbutton">Button Dark</a></div>
+        </div>
+        
+      </div>
+
 
       </div>
    </div>
 
 
-   <div class="container" id="color">
-      <div class="card soft">
-         <h3 style="background-color: #89a192">Color</h3>
-         <div class="grid grid-justify-around">
-         <div class="col-sm-12 col-md-4" ><span class="circlelight"></span>Color Main Light:#d1e6d9</div>
-         <div class="col-sm-12 col-md-4" ><span class="circlemedium"></span>Color Main Medium:#89a192</div>
-         <div class="col-sm-12 col-md-4" ><span class="circledark"></span>Color Main Dark:#3c4f43</div>
-      </div>
-   </div>
 
    <div class="container" id="grid">
       <div class="card soft">
@@ -171,6 +206,15 @@
             </div>
          </div>
       </div>
+
+   
+   <div class="container" id="viewwindow">
+      <div class="card soft">
+         <h3 style="background-color: #89a192">View Window</h3>
+          <div class="view-window display-flex flex-align-center flex-justify-center window-shrink" style="background-image:url(img/ad3.jpg)">
+
+      </div>
+   </div>
 
    
 
@@ -235,22 +279,25 @@ const makeNav = (classes='') => {
       <div class="card soft">
          <h3 style="background-color: #89a192">Navigations</h3>
 
-         <h4>Vertical Nav</h>
-         <div class="grid">
+         <h4>Vertical Nav</h4>
+         <div class="grid gap">
             <div class="col-2 nav-vertical">
                <script>makeNav("nav")</script>
+            </div>
+             <div class="col-10">
+            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
             </div>
           </div>
 
          <h4>Flex Nav</h4>
-         <script>makeNav("nav flex")</script>
+         <div style="background-color: var(--color-neutral-light)"><script>makeNav("nav flex")</script></div>
            
          <h4>Stretch Nav</h4>
-         <script>makeNav("nav stretch")</script>
+          <div style="background-color: var(--color-neutral-light)"><script>makeNav("nav stretch")</script></div>
 
-         <h4>Navbar</h4>
+         <h4>Top Navbar</h4>
          <header class="navbar">
-           <div class="container display-flex flex-align-center">
+           <div class="display-flex flex-align-center">
             <div class="flex-none">
              <div class="brand">Title</div>
            </div>
@@ -282,34 +329,95 @@ const makeNav = (classes='') => {
       
 
          <h4>Form Label &amp; Control</h4>
-         <div class="form-control">
-            <label for="example1" class="form-label">Name</label>
-            <input id="example1" type="text" placeholder="Name" class="form-input">
+         <div class="grid gap">
+          <div class="col-xs-12 col-md-6">
+            <div class="form-control">
+            <label for="example1" class="form-label">First Name</label>
+            <input id="example1" type="text" placeholder="First Name" class="form-input">
+            </div>
+          </div>
+         <div class="col-xs-12 col-md-6">
+          <div class="form-control">
+            <label for="example2" class="form-label">Last Name</label>
+            <input id="example2" type="text" placeholder="Last Name" class="form-input">
+          </div>
          </div>
-         <div class="form-control">
-            <label for="example2" class="form-label">Name</label>
-            <input id="example2" type="text" placeholder="Name" class="form-input">
-         </div>
-         <div class="form-control">
-            <label for="example3" class="form-label">Name</label>
-            <input id="example3" type="text" placeholder="Name" class="form-input">
-         </div>
+       </div>
+         
+         <div class="grid gap">
+          <div class="col-xs-12 col-md-6">
+           <div class="form-control">
+            <label for="example3" class="form-label">Address</label>
+            <input id="example3" type="text" placeholder="Address" class="form-input">
+            </div>
+          </div>
+         <div class="col-xs-12 col-md-6">
+          <div class="form-control">
+            <label for="example3" class="form-label">City</label>
+            <input id="example3" type="text" placeholder="City" class="form-input">
+          </div>
+        </div>
+      </div>
 
+      <div class="grid gap">
+          <div class="col-xs-12 col-md-6">
+           <div class="form-control">
+            <label for="example3" class="form-label">State</label>
+            <input id="example3" type="text" placeholder="State" class="form-input">
+            </div>
+          </div>
+         <div class="col-xs-12 col-md-6">
+          <div class="form-control">
+            <label for="example3" class="form-label">ZIP Code</label>
+            <input id="example3" type="text" placeholder="ZIP Code" class="form-input">
+          </div>
+        </div>
+      </div>
+
+       <div class="grid gap">
+          <div class="col-xs-12 col-md-6">
+           <div class="form-control">
+            <label for="example3" class="form-label">Email</label>
+            <input id="example3" type="text" placeholder="Email" class="form-input">
+            </div>
+          </div>
+         <div class="col-xs-12 col-md-6">
+          <div class="form-control">
+            <label for="example3" class="form-label">Phone Number</label>
+            <input id="example3" type="text" placeholder="Phone Number" class="form-input">
+          </div>
+        </div>
+      </div>
+<!-- 
          <div class="form-control display-flex flex-align-center">
             <div class="flex-none"><label for="example4" class="form-label">Name</label></div>
             <div class="flex-stretch"></div>
             <div class="flex-none"><input id="example4" type="text" placeholder="Name" class="form-input"></div>
-         </div>
+         </div> -->
 
          <h4>Lined Input</h4>
-         <div class="form-control">
-            <label for="example5" class="form-label">Name</label>
-            <input id="example5" type="text" placeholder="Name" class="form-input-lined">
+         <div class="grid gap">
+          <div class="col-xs-12 col-md-6">
+           <div class="form-control">
+            <label for="example5" class="form-label">Credit Card Numver</label>
+            <input id="example5" type="text" placeholder="1111 2222 3333" class="form-input-lined">
          </div>
+        </div>
+         
+         <div class="col-xs-12 col-md-6">
          <div class="form-control">
-            <label for="example6" class="form-label">Name</label>
-            <input id="example6" type="text" placeholder="Name" class="form-input-lined">
+            <label for="example6" class="form-label">Exp Date</label>
+            <input id="example6" type="text" placeholder="mm/yy" class="form-input-lined">
          </div>
+      </div>
+
+      <div class="col-xs-12 col-md-6">
+         <div class="form-control">
+            <label for="example6" class="form-label">CVV</label>
+            <input id="example6" type="text" placeholder="007" class="form-input-lined">
+         </div>
+      </div>
+   </div>
 
          <!-- <hr> -->
 <!-- 
@@ -422,6 +530,61 @@ const makeTable = (classes='') => {
          </div>
       </div>
    </div>
+
+
+   <div class="container" id="layout">
+      <div class="card soft">
+         <h3 style="background-color: #89a192">Product Figure and Layout</h3>
+         <div class="grid grid-justify-around">
+      
+      <div class="col-sm-12 col-md-4" >
+       <div class="product card top soft" style="background-image:url(img/product1.jpg)"></div>
+     </div>
+      
+
+      <div class="col-sm-12 col-md-4">
+       <div class="product card top soft" style="background-image:url(img/product2.jpg) "></div>
+      </div>
+       
+      <div class="col-sm-12 col-md-4"> 
+       <div class="product card top soft" style="background-image:url(img/product3.jpg)"></div>
+      </div> 
+      
+   
+      
+         <div class="col-sm-12 col-md-4">
+           <h3>Title</h3>
+           <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+         </div>
+    
+      <div class="col-md-2"></div>
+      <div class="card soft col-sm-12 col-md-6"  style="background-image:url(img/product5.jpg)"></div>
+      </div>
+    
+     <div class="grid">
+      <div class="col-sm-6 col-md-3">
+        <div id="product6" class="product card bottom soft" style="background-image:url(img/product6.jpg)"></div>
+       
+       </div>
+   
+      <div class="col-sm-6 col-md-3">
+        <div id="product7" class="product card bottom soft col-sm-6 col-md-3" style="background-image:url(img/product7.jpg)"></div>
+        
+      </div>
+
+     <div class="col-sm-6 col-md-3">
+        <div id="product8" class="product card bottom soft col-sm-6 col-md-3" style="background-image:url(img/product8.jpg)"></div>
+        
+     </div>
+     
+     <div class="col-sm-6 col-md-3">
+        <div id="product9" class="product card bottom soft col-sm-6 col-md-3" style="background-image:url(img/product9.jpg)"></div>
+        
+       </div>
+
+
+  </div>
+</div>
 
 
 
