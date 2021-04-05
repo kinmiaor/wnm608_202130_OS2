@@ -1,44 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Products Web</title>
-
-   <link rel="stylesheet" href="lib/css/styleguide.css">
-   <link rel="stylesheet" href="lib/css/gridsystem.css">
-   <link rel="stylesheet" href="css/storetheme.css">
   
+
+   <?php include "parts/meta.php" ?>
+
 </head>
 <body>
-   
-   <!-- header>h1+p -->
-   <!-- cmd + / -->
-   <header class="navbar">
-      <div class="container display-flex flex-align-center" style="margin-top: 0">
-         <div class="flex-none">
-            <div class="brand">LITTLE GREEN HOUSE</div>
-         </div>
-
-         <div class="flex-stretch"></div>
-
-         <!-- nav.nav>ul>li*4>a[href=#article$]>{Link $} -->
-         <!-- <nav class="nav flex-none"> -->
-            <nav>
-            <ul class="hide display-flex">
-               <li><a href="#">Home</a></li>
-               <li><a href="#product1">Skincare</a></li>
-               <li><a href="#product2">Skincare</a></li>
-               <li><a href="#product3">Hair</a></li>
-               <li><a href="#product4">Gift</a></li>
-               <li style="color:#3c4f43">00</li>
-               <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-              <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-              </svg></li>
-            </ul>
-         </nav>
-      </div>
-   </header>
+   <?php include "parts/navbar.php" ?>
 
    <div class="view-window display-flex flex-align-center flex-justify-center window-shrink" style="background-image:url(img/ad.jpg)">
        <!--   <h2 class="h2-shrink" >NATRUAL & FRESH</h2> -->
@@ -175,23 +144,6 @@
    
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   
+</body>
+</html>
