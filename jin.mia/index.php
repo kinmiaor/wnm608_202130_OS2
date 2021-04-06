@@ -79,7 +79,7 @@
        </div>
     
       <div class="col-md-2"></div>
-      <div class="card soft col-sm-12 col-md-6"  style="background-image:url(img/product5.jpg)"></div>
+      <div class="card soft col-sm-12 col-md-6"  style="background-image:url(img/product_middle.jpg)"></div>
         
       </div>
    </div>
@@ -100,26 +100,26 @@
       <div class="grid">
      <!--  <div class="col-md-1"></div> -->
       <div class="col-sm-6 col-md-3">
-        <div id="product6" class="product card bottom soft" style="background-image:url(img/product6.jpg)"></div>
+        <div id="product6" class="product card bottom soft" style="background-image:url(img/product4.jpg)"></div>
         <h5>Black Tea Face Oil</h5>
         <h5>$ 30.00</h5>
          <div class="center"><a href="#" class="button col-sm-6 col-md-3">VIEW MORE</a></div>
       </div>
    
       <div class="col-sm-6 col-md-3">
-        <div id="product7" class="product card bottom soft col-sm-6 col-md-3" style="background-image:url(img/product7.jpg)"></div>
+        <div id="product7" class="product card bottom soft col-sm-6 col-md-3" style="background-image:url(img/product5.jpg)"></div>
         <h5>Daisy Face Oil</h5>
         <h5>$ 30.00</h5>
          <div class="center"><a href="#" class="button col-sm-6 col-md-3">VIEW MORE</a></div>
      </div>
      <div class="col-sm-6 col-md-3">
-        <div id="product8" class="product card bottom soft col-sm-6 col-md-3" style="background-image:url(img/product8.jpg)"></div>
+        <div id="product8" class="product card bottom soft col-sm-6 col-md-3" style="background-image:url(img/product6.jpg)"></div>
         <h5>Butter Sleeping Mask</h5>
         <h5>$ 30.00</h5>
         <div class="center"><a href="#" class="button col-sm-6 col-md-3">VIEW MORE</a></div>
      </div>
      <div class="col-sm-6 col-md-3">
-        <div id="product9" class="product card bottom soft col-sm-6 col-md-3" style="background-image:url(img/product9.jpg)"></div>
+        <div id="product9" class="product card bottom soft col-sm-6 col-md-3" style="background-image:url(img/product7.jpg)"></div>
         <h5>Volcanic Mud Face Mask</h5>
         <h5>$ 30.00</h5>
        <div class="center"><a href="#" class="button col-sm-6 col-md-3">VIEW MORE</a></div>
