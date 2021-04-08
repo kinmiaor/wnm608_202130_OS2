@@ -1,19 +1,19 @@
-<? 
+<?php
 
-// phpinfo(); 
+// phpinfo();
 // broken
 
-echo "<h1>Hello World<h1>";
-echo "Goodbye World";
+echo "<h1>Hello World</h1>";
+echo "Goodbye World\n\t";
 
 // assignment operator
 $a = 5;
 
 // String Interpolation
-echo "<div>I have $a thigs</div>";
-echo '<div>I have $a things</div>';
+echo "<div>I have $a thing's</div>\n";
+echo '<div>I have $a "things"</div>';
 
-// Value Types
+// VALUE TYPES
 
 // Number
 // Integer
@@ -25,7 +25,7 @@ $b = 10;
 
 // String
 $name = "Yerdude";
-$name = 'Mia';
+$name = 'Hamilton';
 
 // Boolean
 $isOn = true;
@@ -33,38 +33,38 @@ $isOn = true;
 // function, class, object
 
 
-// Math
 
+// Math
 
 
 // Order of Operation
 // PEMDAS
-echo (5 + 2 )* 3;
+echo (5 + 2) * 3;
 
 // Concatenation
 echo "<div>b + a = c</div>";
-echo "<div>$b + $a =" . ($b+$a) . "</div>";
+echo "<div>$b + $a = ".($b+$a)."</div>";
+
 
 ?>
-
 
 <hr>
-<div>This is my name</div>
 <div>
-	<?php 
+   This is my name,
+   <?php
 
-$firstname = "Mia";
-$lastname = "Jin";
-$fullname = "$firstname $lastname";
+   $firstname = 'Hamilton';
+   $lastname = "Cline";
+   $fullname = "$firstname $lastname";
 
-echo $fullname;
+   echo $fullname;
 
-?>
+   ?>. What's yours?
 </div>
 
 <hr>
 
-<?php 
+<?php
 
 // Superglobal
 echo "Name is: ".$_GET['name'];
@@ -88,15 +88,78 @@ $colors = ["red","green","blue"];
 
 echo $colors[2];
 
+echo "
+   <br>$colors[0]
+   <br>$colors[1]
+   <br>$colors[2]
+";
+
+echo count($colors);
+
+?>
+
+<div style="color:<?= $colors[1] ?>">
+   This text is green
+</div>
+
+
+<hr>
+
+<?php 
+
+// Associative Array
+$colorsAssoc = [
+   "red" => "#f00",
+   "green" => "#0f0",
+   "blue" => "#00f"
+];
+
+echo $colorsAssoc['red'];
+
 ?>
 
 
+<hr>
+
+<?php
+
+// Casting
+$c = "$a";
+$d = $c*1;
+
+$colorsObject = (object)$colorsAssoc;
+
+// echo $colorsObject;
 
 
+echo "<hr>";
+
+// Array Index Notation
+echo $colors[0]."<br>";
+echo $colorsAssoc['red']."<br>";
+echo $colorsAssoc[$colors[0]]."<br>";
+
+// Object Property Notation
+echo $colorsObject->red."<br>";
+echo $colorsObject->{$colors[0]}."<br>";
+
+?>
+
+<hr>
+
+<?php
+
+var_dump($colors);
+echo "<hr>";
+var_dump($colorsAssoc);
+echo "<pre>",var_dump($colorsObject),"</pre>";
 
 
+// CUSTOM FUNCTIONS
+function pretty_dump($data) {
+   echo "<pre>",var_dump($data),"</pre>";
+}
 
+pretty_dump($colors);
 
-
-
-
+?>
