@@ -8,6 +8,8 @@
 <body>
   <?php include "parts/navbar.php" ?>
    
+   <hr>
+
    <div class="container">
       <div class="card soft">
          <h2>Product List</h2>
@@ -27,5 +29,7 @@
          </ul>
       </div>
    </div>
+  <?php include "parts/footer.php" ?>
+
 </body>
 </html>

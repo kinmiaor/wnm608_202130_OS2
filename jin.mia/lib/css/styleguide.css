@@ -17,7 +17,7 @@
    --header-height: 3rem;
 
 
-   --font-sans: 'Verdana', sans-serif;
+   --font-sans: 'Avenir Next', sans-serif;
    --font-serif: 'DM Serif Display', serif;
 }
 
@@ -29,9 +29,16 @@ body {
 }
 
 
+hr {
+   color: var(--color-neutral-light);
+   background-color: var(--color-main-medium);
+   height: 1px;
+   border-width: 0;
+}
+
 .brand {
-   color: var(--color-white);
-   font-family:var(--font-serif);
+   color: var(--color-main-dark);
+   font-family:Sinhala MN;
    font-size: 1.2em;
 }
 
@@ -197,8 +204,8 @@ a:hover {
 
 /* Navbar */
 .navbar {
-   background-color: var(--color-main-dark);
-   color:var(--color-white);
+   background-color: none;
+   color:var(--color-main-dark);
    line-height:var(--header-height);
 
 }
@@ -457,9 +464,32 @@ a:hover {
 }
 
 
+.footer-inner {
+    background-color: #bfbeb2;
+    width: 100%;
+    border: 0;
+    margin: auto;
+    margin-top: 10em;
+    overflow: hidden;
+    padding-bottom: 20px;
+    line-height: 0.8em;
+}
 
+.subtitle {
+   text-aling: left;
+   font-family:Avenir Next;
+   color: var(--color-main-dark);
+   font-size: 0.8em;
+   line-height: 0.8em;
+}
 
-
+.foodertext {
+   text-aling: left;
+   font-family:Avenir Next;
+   color: var(--color-main-dark);
+   font-size: 1em;
+   line-height: 2em;
+}
 
 
 

@@ -1,14 +1,15 @@
  <header class="navbar">
    <div class="container display-flex flex-align-center" style="margin-top: 0">
       <div class="flex-none">
-         <div class="brand">Little Green House</div>
+         <div class="brand">LITTLE GREEN HOUSE</div>
       </div>
       <div class="flex-stretch"></div>
       <nav class="flex-none nav flex">
          <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="product_list.php">Products</a></li>
-            <li><a href="produc_cart.php">Cart</a></li>
+            <li><a href="index.php">HOME</a></li>
+            <li><a href="product_list.php">SHOP</a></li>
+            <li><a href="product_list.php">ABOUT US</a></li>
+            <li><a href="produc_cart.php">CART</a></li>
          </ul>
       </nav>
    </div>

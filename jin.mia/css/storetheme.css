@@ -8,7 +8,7 @@
 
 body {
    background-color:#e8edea;
-   font-family: Verdana;
+   font-family: Avenir Next;
 }
 
 .button {
@@ -27,6 +27,10 @@ body {
 .center {
   text-align: center;
 }
+
+.left {
+  text-align: left;
+}
 .button:hover {
   background-color: var(--color-main-dark);
   color: var( --color-white);
@@ -37,7 +41,7 @@ body {
   background-color: var(--color-main-medium);
   border: none;
   color: var( --color-white);
-  padding: 10px 64px;
+  padding: 5px 100px;
   text-decoration: none;
   font-size: 1em;
   margin-top: 0;

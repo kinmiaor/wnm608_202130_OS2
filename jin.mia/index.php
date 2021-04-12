@@ -11,6 +11,9 @@
 
    <div class="view-window display-flex flex-align-center flex-justify-center window-shrink" style="background-image:url(img/ad.jpg)">
        <!--   <h2 class="h2-shrink" >NATRUAL & FRESH</h2> -->
+
+
+       
        <img class="hide" src="img/logo.png" alt="logo" width="300" height="300">
 
    </div>
@@ -23,7 +26,9 @@
    <a href="#" class="bigbutton">SHOP NOW</a>
    </div>
 
-
+  <div class="container display-flex flex-justify-center hide">
+    <h2>House Best Sellers</h2>
+   </div>
    <!-- .container>article#article$.article*4>h2{Article $}+div.article-body>p*4>lorem40 -->
    <div class="containerwide">
       <div class="grid grid-justify-around">
@@ -72,9 +77,9 @@
       <div class="grid grid-justify-around">
          <div class="col-sm-12 col-md-4" >
            <h3>The Story Behind Us</h3>
-           <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+           <div class="foodertext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
          
-       <div class="center"><a href="#" class="button">EXPLORE NOW</a></div>
+       <div class="center" style="margin-top: 2em"><a href="#" class="borderbutton">EXPLORE NOW</a></div>
         
        </div>
     
@@ -94,7 +99,9 @@
     </div>
     
       
-
+   <div class="container display-flex flex-justify-center hide">
+    <h2>Repair Your Skin Overnight</h2>
+   </div>
 
    <div class="containerwide grid-justify-around">
       <div class="grid">
@@ -124,23 +131,47 @@
         <h5>$ 30.00</h5>
        <div class="center"><a href="#" class="button col-sm-6 col-md-3">VIEW MORE</a></div>
      </div>
-     <!--  <div id="product10" class="product card bottom soft col-sm-6 col-md-2" style="background-image:url(img/product10.jpg)"></div> -->
-  <!--     <div class="col-md-1"></div> -->
+    
       </div>
    </div>
+  </div>
 
-<!--   <div class="containerwide grid-justify-around hide" style="margin-top: 1em">
-   <div class="grid">
-     <div class="col-md-1"></div>
-      <a href="#" class="button col-sm-6 col-md-3">VIEW MORE</a>
-    <a href="#" class="button col-sm-6 col-md-3">VIEW MORE</a>
-      <a href="#" class="button col-sm-6 col-md-3">VIEW MORE</a>
-      <a href="#" class="button col-sm-6 col-md-3">VIEW MORE</a>
-      <a href="#" class="button col-sm-6 col-md-2">VIEW MORE</a>
-       <div class="col-md-1"></div>
-    </div>
-   </div>
- -->
+
+   <?php include "parts/footer.php" ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    
 </body>
 </html>
