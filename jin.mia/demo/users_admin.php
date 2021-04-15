@@ -58,6 +58,21 @@ echo <<<HTML
          <div class="grid gap">
           <div class="col-xs-12 col-md-6">
            <div class="form-control">
+            <label for="example3" class="form-label">Type</label>
+            <input id="example3" type="text" placeholder="$user->type" class="form-input">
+            </div>
+          </div>
+         <div class="col-xs-12 col-md-6">
+          <div class="form-control">
+            <label for="example3" class="form-label">Classes</label>
+            <input id="example3" type="text" placeholder="$classes" class="form-input">
+          </div>
+        </div>
+      </div>
+
+         <div class="grid gap">
+          <div class="col-xs-12 col-md-6">
+           <div class="form-control">
             <label for="example3" class="form-label">Address</label>
             <input id="example3" type="text" placeholder="Address" class="form-input">
             </div>
@@ -69,6 +84,8 @@ echo <<<HTML
           </div>
         </div>
       </div>
+
+    
 
       <div class="grid gap">
           <div class="col-xs-12 col-md-6">
