@@ -262,6 +262,11 @@ a:hover {
       border-radius:0.5em;
       box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
    }
+   
+   .card.soft:hover {
+      box-shadow:0 0 10px var(--color-neutral-medium);
+   }
+
    .card.hard {
       border-radius:0.2em;
       border:2px solid var(--color-neutral-medium);
@@ -381,20 +386,24 @@ a:hover {
    display:inline-block;
    width:100%;
    border-width:0;
-   background-color:var(--color-neutral-light);
+   background-color:var(--color-main-dark);
    padding:0.5em 1em;
    border-radius:0.3em;
    font:inherit;
    outline:0;
+   color: var( --color-white);
    text-align:center;
    text-decoration:none;
+   margin-top: 3em;
    cursor:pointer;
    transition:all 0.3s;
    -webkit-appearance:none;
+
 }
 .form-button:hover {
    text-decoration:none;
-   box-shadow:0 0 10px var(--color-neutral-light);
+   box-shadow:0 0 10px var(--color-neutral-medium);
+   background-color:var(--color-main-medium);
 }
 .form-button:active {
    background-color:var(--color-main-light);

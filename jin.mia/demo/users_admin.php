@@ -8,7 +8,44 @@ $users = file_get_json("users.json");
 // pretty_dump($_GET);
 
 
+$empty_object = (object) [
+   "name"=>"",
+   "type"=>"",
+   "email"=>"",
+   "classes"=>[]
+];
 
+
+
+switch(@$_GET['crud']) {
+   case 'update':
+      $users[$_GET['id']]->name = $_POST['user-name'];
+      $users[$_GET['id']]->type = $_POST['user-type'];
+      $users[$_GET['id']]->email = $_POST['user-email'];
+      $users[$_GET['id']]->classes = explode(", ",$_POST['user-classes']);
+
+      file_put_contents($filename,json_encode($users));
+
+      header("location:{$_SERVER['PHP_SELF']}?id=".$_GET['id']);
+      break;
+   case 'create':
+      $empty_object->name = $_POST['user-name'];
+      $empty_object->type = $_POST['user-type'];
+      $empty_object->email = $_POST['user-email'];
+      $empty_object->classes = explode(", ",$_POST['user-classes']);
+
+      $id = count($users);
+
+      // array_push()
+      $users[] = $empty_object;
+
+      file_put_contents($filename,json_encode($users));
+
+      header("location:{$_SERVER['PHP_SELF']}?id=$id");
+      break;
+   case 'delete':
+      break;
+}
 
 
 
@@ -16,109 +53,67 @@ $users = file_get_json("users.json");
 
 function showUserPage($user) {
 
+$id = $_GET['id'];
 $classes = implode(", ", $user->classes);
+$addoredit = $id=="new" ? 'Add' : 'Edit';
+$createorupdate = $id=="new" ? 'create' : 'update';
 
+
+// heredoc
 echo <<<HTML
+<div class="grid gap">
+<div class="col-xs-12">
+<div class="card soft">
 <nav class="nav crumbs">
    <ul>
       <li><a href="{$_SERVER['PHP_SELF']}">Back</a></li>
    </ul>
 </nav>
-<div>
-   <h2>$user->fullname</h2>
-   <div>
-      <strong>Type</strong>
-      <span>$user->type</span>
-   </div>
-   <div>
-      <strong>Email</strong>
-      <span>$user->email</span>
-   </div>
-   <div>
-      <strong>Classes</strong>
-      <span>$classes</span>
+</div>
+</div>
+<div class="col-xs-12 col-md-4">
+   <div class="card soft">
+      <h3>$user->name</h3>
+      <div>
+         <strong>Type</strong>
+         <span>$user->type</span>
+      </div>
+      <div>
+         <strong>Email</strong>
+         <span>$user->email</span>
+      </div>
+      <div>
+         <strong>Classes</strong>
+         <span>$classes</span>
+      </div>
    </div>
 </div>
-
-<div class="grid gap">
-          <div class="col-xs-12 col-md-6">
-            <div class="form-control">
-            <label for="example1" class="form-label">First Name</label>
-            <input id="example1" type="text" placeholder="$user->firtsname" class="form-input">
-            </div>
-          </div>
-         <div class="col-xs-12 col-md-6">
-          <div class="form-control">
-            <label for="example2" class="form-label">Last Name</label>
-            <input id="example2" type="text" placeholder="$user->lastname" class="form-input">
-          </div>
-         </div>
-       </div>
-         
-         <div class="grid gap">
-          <div class="col-xs-12 col-md-6">
-           <div class="form-control">
-            <label for="example3" class="form-label">Type</label>
-            <input id="example3" type="text" placeholder="$user->type" class="form-input">
-            </div>
-          </div>
-         <div class="col-xs-12 col-md-6">
-          <div class="form-control">
-            <label for="example3" class="form-label">Classes</label>
-            <input id="example3" type="text" placeholder="$classes" class="form-input">
-          </div>
-        </div>
+<form class="col-xs-12 col-md-8" method="post" action="{$_SERVER['PHP_SELF']}?id=$id&crud=$createorupdate">
+   <div class="card soft">
+      <h3>$addoredit User</h3>
+      <input type="hidden" name="id" value="$id">
+      <div class="form-control">
+         <label class="form-label" for="user-name">Name</label>
+         <input class="form-input"type="text" id="user-name" name="user-name" value="$user->name">
       </div>
-
-         <div class="grid gap">
-          <div class="col-xs-12 col-md-6">
-           <div class="form-control">
-            <label for="example3" class="form-label">Address</label>
-            <input id="example3" type="text" placeholder="Address" class="form-input">
-            </div>
-          </div>
-         <div class="col-xs-12 col-md-6">
-          <div class="form-control">
-            <label for="example3" class="form-label">City</label>
-            <input id="example3" type="text" placeholder="City" class="form-input">
-          </div>
-        </div>
+      <div class="form-control">
+         <label class="form-label" for="user-type">Type</label>
+         <input class="form-input"type="text" id="user-type" name="user-type" value="$user->type">
       </div>
-
-    
-
-      <div class="grid gap">
-          <div class="col-xs-12 col-md-6">
-           <div class="form-control">
-            <label for="example3" class="form-label">State</label>
-            <input id="example3" type="text" placeholder="State" class="form-input">
-            </div>
-          </div>
-         <div class="col-xs-12 col-md-6">
-          <div class="form-control">
-            <label for="example3" class="form-label">ZIP Code</label>
-            <input id="example3" type="text" placeholder="ZIP Code" class="form-input">
-          </div>
-        </div>
+      <div class="form-control">
+         <label class="form-label" for="user-email">Email</label>
+         <input class="form-input"type="email" id="user-email" name="user-email" value="$user->email">
       </div>
-
-       <div class="grid gap">
-          <div class="col-xs-12 col-md-6">
-           <div class="form-control">
-            <label for="example3" class="form-label">Email</label>
-            <input id="example3" type="text" placeholder="$user->email" class="form-input">
-            </div>
-          </div>
-         <div class="col-xs-12 col-md-6">
-          <div class="form-control">
-            <label for="example3" class="form-label">Phone Number</label>
-            <input id="example3" type="text" placeholder="Phone Number" class="form-input">
-          </div>
-        </div>
+      <div class="form-control">
+         <label class="form-label" for="user-classes">Classes</label>
+         <input class="form-input"type="text" id="user-classes" name="user-classes" value="$classes">
       </div>
-      
-       <div class="center" style="margin-top: 4em"><a href="#" class="darkbutton">Submit</a></div>
-
+      <div class="form-control">
+         <input class="form-button" type="submit" value="Submit">
+      </div>
+   </div>
+</form>
+</div>
 HTML;
 }
 
@@ -133,31 +128,36 @@ HTML;
    <?php include "../parts/meta.php" ?>
 </head>
 <body>
-     <header class="navbar">
-      <div class="container display-flex flex-align-center"  style="margin-top: 0">
-         <div class="flex-none">
-            <div class="brand">User Admin</div>
-         </div>
-         <div class="flex-stretch"></div>
-         <nav class="flex-none nav flex">
-            <ul>
-               <li><a href="<?= $_SERVER['PHP_SELF'] ?>">List</a></li>
-            </ul>
-         </nav>
+  
+   <header class="navbar">
+   <div class="container display-flex flex-align-center" style="margin-top: 0">
+      <div class="flex-none">
+         <div class="brand">User Admin</div>
       </div>
-   </header>
+      <div class="flex-stretch"></div>
+      <nav class="flex-none nav flex">
+         <ul>
+            <li><a href="<?= $_SERVER['PHP_SELF'] ?>">List</a></li>
+               <li><a href="<?= $_SERVER['PHP_SELF'] ?>?id=new">Add New User</a></li>
+         </ul>
+      </nav>
+   </div>
+</header>
 
    <div class="container">
-      <div class="card soft">
-
-
 
          <?php
          if(isset($_GET['id'])) {
-            showUserPage($users[$_GET['id']]);
+            // ternary, conditional
+            showUserPage(
+               $_GET['id']=="new" ?
+               $empty_object :
+               $users[$_GET['id']]
+            );
          } else {
          ?>
 
+      <div class="card soft">
          <h2>User List</h2>
 
          <ul>
@@ -165,16 +165,16 @@ HTML;
 
          for($i=0; $i<count($users); $i++) {
             echo "<li>
-            <a href='{$_SERVER['PHP_SELF']}?id=$i'>{$users[$i]->fullname}</a>
+            <a href='{$_SERVER['PHP_SELF']}?id=$i'>{$users[$i]->name}</a>
             </li>";
          }
 
          ?>
          </ul>
+      </div>
          <?php
          }
          ?>
-      </div>
    </div>
 </body>
 </html>
