@@ -24,7 +24,7 @@
    </div>
  
    <div class="containerbutton display-flex flex-justify-center button-shrink">
-   <a href="#" class="bigbutton">SHOP NOW</a>
+   <a href="product_list.php" class="bigbutton">SHOP NOW</a>
    </div>
 
   <div class="container display-flex flex-justify-center hide">
@@ -39,7 +39,7 @@
        <h5>Deep Hydration Moisturizer</h5>
        <h6>Smoothes & softens</h6>
        <h5>$ 45.00</h5>
-       <div class="center"><a href="#" class="button">VIEW MORE</a></div>
+       <div class="center"><a href="product_list.php" class="button">VIEW MORE</a></div>
       </div>
       
       <div class="col-sm-12 col-md-4">
@@ -47,7 +47,7 @@
        <h5>Green Tea Skincare Set</h5>
        <h6>Value of $168</h6>
        <h5>$ 119.00</h5>
-       <div class="center"><a href="#" class="button">VIEW MORE</a></div>
+       <div class="center"><a href="product_list.php" class="button">VIEW MORE</a></div>
      </div>
        
       <div class="col-sm-12 col-md-4"> 
@@ -55,7 +55,7 @@
         <h5>Honey Face Mask</h5>
         <h6>Firms for a lifted look</h6>
         <h5>$ 35.00</h5>
-         <div class="center"><a href="#" class="button">VIEW MORE</a></div>
+         <div class="center"><a href="product_list.php" class="button">VIEW MORE</a></div>
       </div>
         
       </div>
@@ -80,15 +80,16 @@
            <h3>The Story Behind Us</h3>
            <div class="foodertext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
          
-       <div class="center" style="margin-top: 2em"><a href="#" class="borderbutton">EXPLORE NOW</a></div>
+       <div class="center" style="margin-top: 2em"><a href="product_list.php" class="borderbutton">EXPLORE NOW</a></div>
         
        </div>
     
       <div class="col-md-2"></div>
-      <div class="card soft col-sm-12 col-md-6"  style="background-image:url(img/product_middle.jpg)"></div>
+      <div class="card soft col-sm-12 col-md-6 hide"  style="background-image:url(img/product_middle.jpg)"></div>
         
       </div>
    </div>
+
 
    <!--  <div class="container display-flex flex-space-around" style="margin-top: 1em">
     <a href="#" class="button">LEARN MORE</a>
@@ -111,26 +112,26 @@
         <div id="product6" class="product card bottom soft" style="background-image:url(img/product4.jpg)"></div>
         <h5>Black Tea Face Oil</h5>
         <h5>$ 30.00</h5>
-         <div class="center"><a href="#" class="button col-sm-6 col-md-3">VIEW MORE</a></div>
+         <div class="center"><a href="product_list.php" class="button col-sm-6 col-md-3">VIEW MORE</a></div>
       </div>
    
       <div class="col-sm-6 col-md-3">
         <div id="product7" class="product card bottom soft col-sm-6 col-md-3" style="background-image:url(img/product5.jpg)"></div>
         <h5>Daisy Face Oil</h5>
         <h5>$ 30.00</h5>
-         <div class="center"><a href="#" class="button col-sm-6 col-md-3">VIEW MORE</a></div>
+         <div class="center"><a href="product_list.php" class="button col-sm-6 col-md-3">VIEW MORE</a></div>
      </div>
      <div class="col-sm-6 col-md-3">
         <div id="product8" class="product card bottom soft col-sm-6 col-md-3" style="background-image:url(img/product6.jpg)"></div>
         <h5>Butter Sleeping Mask</h5>
         <h5>$ 30.00</h5>
-        <div class="center"><a href="#" class="button col-sm-6 col-md-3">VIEW MORE</a></div>
+        <div class="center"><a href="product_list.php" class="button col-sm-6 col-md-3">VIEW MORE</a></div>
      </div>
      <div class="col-sm-6 col-md-3">
         <div id="product9" class="product card bottom soft col-sm-6 col-md-3" style="background-image:url(img/product7.jpg)"></div>
         <h5>Volcanic Mud Face Mask</h5>
         <h5>$ 30.00</h5>
-       <div class="center"><a href="#" class="button col-sm-6 col-md-3">VIEW MORE</a></div>
+       <div class="center"><a href="product_list.php" class="button col-sm-6 col-md-3">VIEW MORE</a></div>
      </div>
     
       </div>
