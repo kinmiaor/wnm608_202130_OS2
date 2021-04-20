@@ -2,10 +2,11 @@
 
 include "../lib/php/function.php";
 
+$filename = "users.json";
 $users = file_get_json("users.json");
 
 // pretty_dump($_SERVER);
-// pretty_dump($_GET);
+// pretty_dump([$_GET,$_POST]);
 
 
 $empty_object = (object) [
@@ -44,6 +45,11 @@ switch(@$_GET['crud']) {
       header("location:{$_SERVER['PHP_SELF']}?id=$id");
       break;
    case 'delete':
+      array_splice($users,$_GET['id'],1);
+
+      file_put_contents($filename,json_encode($users));
+
+      header("location:{$_SERVER['PHP_SELF']}");
       break;
 }
 
@@ -64,10 +70,10 @@ echo <<<HTML
 <div class="grid gap">
 <div class="col-xs-12">
 <div class="card soft">
-<nav class="nav crumbs">
-   <ul>
-      <li><a href="{$_SERVER['PHP_SELF']}">Back</a></li>
-   </ul>
+<nav class="nav pills display-flex">
+   <div class="flex-none"><a href="{$_SERVER['PHP_SELF']}"><img class="icon" src="img/arrow-left.svg"></a></div>
+   <div class="flex-stretch"></div>
+   <div class="flex-none"><a href="{$_SERVER['PHP_SELF']}?id=$id&crud=delete"><img class="icon" src="img/trash.svg"></a></div>
 </nav>
 </div>
 </div>
@@ -138,7 +144,7 @@ HTML;
       <nav class="flex-none nav flex">
          <ul>
             <li><a href="<?= $_SERVER['PHP_SELF'] ?>">List</a></li>
-               <li><a href="<?= $_SERVER['PHP_SELF'] ?>?id=new">Add New User</a></li>
+               <li><a href="<?= $_SERVER['PHP_SELF'] ?>?id=new">Add New Users</a></li>
          </ul>
       </nav>
    </div>

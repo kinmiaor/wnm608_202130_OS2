@@ -134,6 +134,11 @@ body {
   
    height: 30vh;
 }
+/*
+[class*='col-']>.card{
+  height: 100%;
+}*/
+
 .view-window1 {
    position:relative;
    overflow:hidden;

@@ -500,7 +500,11 @@ a:hover {
    line-height: 2em;
 }
 
+svg {
+  fill: var(--color-neutral-dark);
+}
 
-
-
+svg:hover {
+  fill: var(--color-neutral-medium);
+}
 
