@@ -1,9 +1,11 @@
-<!DOCTYPE html>
+<?php
+include "lib/php/functions.php";
+include "parts/templates.php";
+?><!DOCTYPE html>
 <html lang="en">
 <head>
-   <?php include "parts/meta.php" ?>
    <title>Product List</title>
-
+   <?php include "parts/meta.php" ?>
 </head>
 <body>
   <?php include "parts/navbar.php" ?>
@@ -12,8 +14,20 @@
    
 <div class="containerwide grid-justify-around">
       <div class="grid">
-     <!--  <div class="col-md-1"></div> -->
-      <div class="col-sm-6 col-md-3">
+         <?php
+
+      $products = MYSQLIQuery("
+         SELECT *
+         FROM `products`
+         ORDER BY `date_create` DESC
+         LIMIT 12
+      ");
+
+      echo array_reduce($products,'makeProductList');
+
+      ?>
+   
+    <!--   <div class="col-sm-6 col-md-3">
        <a href="product_item.php?id=1"> <div id="product1" class="product card bottom soft" style="background-image:url(img/product1.jpg)"></div></a>
         <h5>Deep Hydration Moisturizer</h5>
         <h5>$45.00</h5>
@@ -50,7 +64,7 @@
 
 <div class="containerwide grid-justify-around">
       <div class="grid">
-     <!--  <div class="col-md-1"></div> -->
+   
       <div class="col-sm-6 col-md-3">
         <a href="product_item.php?id=5"><div id="product5" class="product card bottom soft" style="background-image:url(img/product5.jpg)"></div></a>
         <h5>Daisy Face Oil</h5>
@@ -87,7 +101,7 @@
 
 <div class="containerwide grid-justify-around">
       <div class="grid">
-     <!--  <div class="col-md-1"></div> -->
+    
       <div class="col-sm-6 col-md-3">
         <a href="product_item.php?id=9"><div id="product9" class="product card bottom soft" style="background-image:url(img/product9.jpg)"></div></a>
         <h5>Daisy Face Oil</h5>
@@ -118,7 +132,7 @@
        <div class="center"><a href="product_added_cart" class="button col-sm-6 col-md-3">ADD TO CART</a></div>
      </div>
     
-      </div>
+      </div> -->
    </div>
   </div>
 
