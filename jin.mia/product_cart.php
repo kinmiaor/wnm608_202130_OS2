@@ -1,22 +1,42 @@
 <?php
+
 include "lib/php/functions.php";
+include "parts/templates.php";
+
+$cart = MYSQLIQuery("
+   SELECT *
+   FROM `products`
+   WHERE `id` IN (5,9,2)
+");
+
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php include "parts/meta.php" ?>
-   <title>Cart</title>
-
+   <title>Product Cart</title>
+   
+   <?php include "parts/meta.php" ?>
 </head>
 <body>
    <?php include "parts/navbar.php" ?>
+   <hr>
    
+
    <div class="container">
-      <div class="card soft">
-         <h2>Your Cart</h2>
+     
+         <h2>Confirm Cart</h2>
 
-         <div>This is product you selected</div>
+         <?php
 
-      </div>
+         echo array_reduce($cart,'makeCartList');
+
+         ?>
+
+         <div>
+            <a class="form-button" href="product_checkout.php">Checkout</a>
+         </div>
+    
    </div>
+    <?php include "parts/footer.php" ?>
+
 </body>
 </html>
