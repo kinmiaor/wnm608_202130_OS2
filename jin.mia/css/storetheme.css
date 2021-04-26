@@ -293,3 +293,11 @@ p {
    object-fit:cover;
 }
 
+.about1 {
+  color: #bfbeb2;
+  
+  font-size: 2em;
+  text-align: center;
+  line-height: 1.5;
+  padding: 5em;
+}

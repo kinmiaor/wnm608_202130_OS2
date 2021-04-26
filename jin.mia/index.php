@@ -78,7 +78,7 @@
       <div class="grid grid-justify-around">
          <div class="col-sm-12 col-md-4" >
            <h3>The Story Behind Us</h3>
-           <div class="foodertext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+           <div class="foodertext">We are driven by our never complacent indie spirit where the sky's the limit. This approach is initiated by Mia lived by the entire organization. Our boundless curiosity fuels our search for the extraordinary, whether it’s a moment of pleasure in nature or an experience of generosity in our house. Where green goes, beauty follows. We’re pioneers—in product, in experience, in culture, and in process. We believe that green house is more than what it sells; it’s the emotional connection to the brand that we call the sixth sense. It’s the heartfelt experience we craft for our people and our guests.</div>
          
        <div class="center" style="margin-top: 2em"><a href="product_list.php" class="borderbutton">EXPLORE NOW</a></div>
         
@@ -174,9 +174,6 @@
 
 
 
-   
-</body>
-</html>
-   
+
 </body>
 </html>
