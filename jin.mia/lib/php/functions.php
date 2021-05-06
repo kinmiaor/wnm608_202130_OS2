@@ -113,3 +113,13 @@ function makeCartBadge() {
    return count($cart)==0 ? "" :
       array_reduce($cart,function($r,$o){return $r+$o->amount;},0);
 }
+
+
+function setDefault($k,$v){
+   if(!isset($_GET[$k])) $_GET[$k] = $v;
+}
+
+
+
+
+

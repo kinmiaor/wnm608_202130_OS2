@@ -1,9 +1,15 @@
+<?php
+include "lib/php/functions.php";
+include "parts/templates.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 
   
-
+   <?php include "parts/navbar.php" ?>
    <?php include "parts/meta.php" ?>
 
 </head>

@@ -1,11 +1,8 @@
 <?php
 include "lib/php/functions.php";
+include "data/api.php";
 
-$product = MYSQLIQuery("
-   SELECT *
-   FROM `products`
-   WHERE `id` = {$_GET['id']}
-")[0];
+$product = makeStatement("product_by_id")[0];
 
 $thumbs = explode(",", $product->image);
 

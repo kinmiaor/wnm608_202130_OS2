@@ -1,6 +1,7 @@
 <?php
 include "lib/php/functions.php";
 include "parts/templates.php";
+$cart = getCartItems();
 
 ?><!DOCTYPE html>
 <html lang="en">
