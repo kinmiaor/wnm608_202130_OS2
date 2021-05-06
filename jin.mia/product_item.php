@@ -13,6 +13,8 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
    return $r."<img src='/img/$o'>";
 });
 
+echo $_SESSION['num'];
+
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,7 +36,8 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
            
          </div>
          <div class="col-xs-12 col-md-5">
-            <div class="card flat" style="background-color:#e8edea">
+            <form class="card flat" style="background-color:#e8edea" action="product_actions.php?crud=add-to-cart" method="post">
+              <input type="hidden" name="id" value="<?= $product->id ?>">
                <div class="card-section">
                   <h4><?= $product->name ?></h4>
                    <h6 style="text-align: left"> <?= $product->description ?></h6>
@@ -44,7 +47,7 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
                <div class="card-section">
                   <label class="form-label">Amount</label>
                   <div class="form-select">
-                     <select>
+                     <select name="amount">
                         <!-- option[value='$']*10>{$} -->
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -61,10 +64,10 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
                </div>
                
               <div class="card-section">
-               <div class="center" style="margin-bottom: 4em"><a href="product_added_cart.php" class="form-button col-sm-6 col-md-3">ADD TO CART</a></div>
+               <div class="center" style="margin-bottom: 4em"><button type="submit" class="form-button col-sm-6 col-md-3">ADD TO CART</button></div>
             </div>
             
-         </div>
+         </form>
       </div>
    </div>
 </div>

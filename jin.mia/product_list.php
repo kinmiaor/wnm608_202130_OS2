@@ -1,6 +1,9 @@
 <?php
 include "lib/php/functions.php";
 include "parts/templates.php";
+
+$_SESSION['num'] = 0;
+
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
