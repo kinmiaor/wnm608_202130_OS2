@@ -43,7 +43,7 @@ return $r.<<<HTML
    <div class="col-sm-12 col-md-5">
     <div class="card flat">
      <div class="card-section">
-   <h4>$o->name</h4>
+      <h4>$o->name</h4>
       <form action="product_actions.php?crud=delete-cart-item" method="post" style="font-size:0.8em">
          <input type="hidden" name="id" value="$o->id">
         <input type="submit" value="delete" class="button">
@@ -112,7 +112,7 @@ return <<<HTML
       <strong>Taxes</strong>
    </div>
    <div class="flex-none">&dollar;$tax</div>
-</div>
+</div><hr>
 <div class="card-section display-flex">
    <div class="flex-stretch">
       <strong>Total</strong>

@@ -301,3 +301,23 @@ p {
   line-height: 1.5;
   padding: 5em;
 }
+
+.navbar a {
+   position:relative;
+}
+.navbar .badge {
+   position:absolute;
+   top:5px;
+   right:-0.5em;
+   font-size:0.6em;
+   padding:0.5em;
+   border-radius:1em;
+   background-color:var(--color-main-dark);
+   color:white;
+   line-height:1;
+   pointer-events:none;
+}
+.navbar .badge:empty {
+   display:none;
+}
+

@@ -17,7 +17,7 @@ $cart = getCartItems();
 </head>
 <body>
    <?php include "parts/navbar.php" ?>
-   
+   <hr>
 
    <div class="container">
       <div class="grid gap">

@@ -13,7 +13,7 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
    return $r."<img src='/img/$o'>";
 });
 
-echo $_SESSION['num'];
+// echo $_SESSION['num'];
 
 ?><!DOCTYPE html>
 <html lang="en">

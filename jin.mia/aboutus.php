@@ -8,7 +8,7 @@
 
 </head>
 <body>
-   <?php include "parts/navbar.php" ?>
+  
     <div class="view-window display-flex flex-align-center flex-justify-center window-shrink" style="background-image:url(img/ad6.jpeg)">
 	  <div class="about1">By combining potent natural ingredients, ancient rituals, and modern science, litt green house creates beauty products that perform with experiences that transform.</div>
     </div>
