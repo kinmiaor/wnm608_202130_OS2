@@ -9,7 +9,7 @@ $(()=>{
 
 
 
-const checkSort = (el) => {
+ const checkSort = (el) => {
 
    let form = el.closest("form");
    let selected = el.querySelector(":checked");
@@ -21,4 +21,4 @@ const checkSort = (el) => {
    form.d.value = d;
 
    form.submit();
-}
+}  
