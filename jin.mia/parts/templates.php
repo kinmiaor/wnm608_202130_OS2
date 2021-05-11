@@ -80,7 +80,7 @@ $amountselect = selectAmount($o->amount,10);
 return $r.<<<HTML
 <div class="display-flex card-section">
    <div class="flex-stretch">
-      <strong>$o->title</strong>
+      <strong>$o->name</strong>
    </div>
    <div class="flex-none">
       <div>&dollar;$totalfixed</div>
