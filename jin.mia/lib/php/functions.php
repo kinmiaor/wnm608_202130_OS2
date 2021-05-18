@@ -12,9 +12,13 @@ function file_get_json($filename) {
    return json_decode($data_string);
 }
 
+
 /* DATABASE CONNECTION */
 function MYSQLIConn() {
-   include_once "data/auth.php";
+   @include_once "data/auth.php";
+   if (!function_exists('MYSQLIAuth')) {
+      @include_once "../data/auth.php";
+   }
 
    @$conn = new mysqli(...MYSQLIAuth());
 
@@ -25,7 +29,6 @@ function MYSQLIConn() {
 
    return $conn;
 }
-
 /* DATABASE CALL */
 function MYSQLIQuery($sql) {
    $conn = MYSQLIConn();
@@ -63,7 +66,7 @@ function setCart($a) {
 function resetCart() { setCart([]); }
 
 function cartItemById($id) {
-   return array_find(getCart(),function($o)use($id){ return $o->id==$id; });
+   return getItemById(getCart(),$id);
 }
 
 function addToCart($id,$amount) {
