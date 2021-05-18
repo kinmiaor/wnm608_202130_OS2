@@ -9,6 +9,7 @@
             <li><a href="index.php">HOME</a></li>
             <li><a href="product_list.php">SHOP</a></li>
             <li><a href="aboutus.php">ABOUT</a></li>
+            <li><a href="admin/index.php">ADMIN</a></li>
             <li><a href="product_cart.php">
             <span>CART</span>
             <span class="badge"><?= makeCartBadge() ?></span>
