@@ -119,8 +119,12 @@ echo <<<HTML
       <h2>$addoredit Product</h2>
       <input type="hidden" name="id" value="$id">
       <div class="form-control">
-         <label class="form-label" for="product-title">Title</label>
-         <input class="form-input"type="text" id="product-name" name="product-title" value="$product->name">
+         <label class="form-label" for="product-name">Name</label>
+         <input class="form-input"type="text" id="product-name" name="product-name" value="$product->name">
+      </div>
+       <div class="form-control">
+         <label class="form-label" for="product-price">Price</label>
+         <input class="form-input" type="number" min="1" step=".01" id="product-price" name="product-price" value="$product->price">
       </div>
       <div class="form-control">
          <label class="form-label" for="product-category">Category</label>
@@ -131,8 +135,8 @@ echo <<<HTML
          <textarea class="form-input"type="text" id="product-description" name="product-description">$product->description</textarea>
       </div>
       <div class="form-control">
-         <label class="form-label" for="product-image_thumb">Image</label>
-         <input class="form-input"type="text" id="product-image" name="product-image_thumb" value="$product->image">
+         <label class="form-label" for="product-image">Image</label>
+         <input class="form-input"type="text" id="product-image" name="product-image" value="$product->image">
       </div>
       <div class="form-control">
          <label class="form-label" for="product-quantity">Quantity</label>

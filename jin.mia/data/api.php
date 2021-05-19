@@ -87,7 +87,7 @@ function makeStatement($type) {
                `category` = ?,
                `image` = ?,
                `description` = ?,
-               `quantity` = ?
+               `quantity` = ?,
                `date_modify` = NOW()
             WHERE `id` = ?
             ");
@@ -125,7 +125,6 @@ function makeStatement($type) {
                ?,
                ?,
                ?,
-              
                NOW(),
                NOW()
             )
