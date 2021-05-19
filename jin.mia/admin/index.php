@@ -44,111 +44,6 @@ switch(@$_GET['crud']) {
 
 
 
-// switch(@$_GET['crud']) {
-//    case 'update':
-//       $products[$_GET['id']]->name = $_POST['product-name'];
-//       $products[$_GET['id']]->type = $_POST['product-type'];
-//       $products[$_GET['id']]->email = $_POST['product-email'];
-//       $products[$_GET['id']]->classes = explode(", ",$_POST['product-classes']);
-
-//       file_put_contents($filename,json_encode($products));
-
-//       header("location:{$_SERVER['PHP_SELF']}?id=".$_GET['id']);
-//       break;
-//    case 'create':
-//       $empty_object->name = $_POST['product-name'];
-//       $empty_object->type = $_POST['product-type'];
-//       $empty_object->email = $_POST['product-email'];
-//       $empty_object->classes = explode(", ",$_POST['product-classes']);
-
-//       $id = count($products);
-
-//       // array_push()
-//       $products[] = $empty_object;
-
-//       file_put_contents($filename,json_encode($products));
-
-//       header("location:{$_SERVER['PHP_SELF']}?id=$id");
-//       break;
-//    case 'delete':
-//       array_splice($products,$_GET['id'],1);
-
-//       file_put_contents($filename,json_encode($products));
-
-//       header("location:{$_SERVER['PHP_SELF']}");
-//       break;
-// }
-
-
-
-
-
-// function showProductPage($product) {
-
-// $id = $_GET['id'];
-// $classes = implode(", ", $product->classes);
-// $addoredit = $id=="new" ? 'Add' : 'Edit';
-// $createorupdate = $id=="new" ? 'create' : 'update';
-
-
-// // heredoc
-// echo <<<HTML
-// <div class="grid gap">
-// <div class="col-xs-12">
-// <div class="card soft">
-// <nav class="nav pills display-flex">
-//    <div class="flex-none"><a href="{$_SERVER['PHP_SELF']}"><img src="img/icon/arrow-left.svg" class="icon" style="font-size:1.5em"></a></div>
-//    <div class="flex-stretch"></div>
-//    <div class="flex-none"><a href="{$_SERVER['PHP_SELF']}?id=$id&crud=delete"><img src="img/icon/trash.svg" class="icon" style="font-size:1.5em"></a></div>
-// </nav>
-// </div>
-// </div>
-// <div class="col-xs-12 col-md-4">
-//    <div class="card soft">
-//       <h2>$product->name</h2>
-//       <div>
-//          <strong>Type</strong>
-//          <span>$product->type</span>
-//       </div>
-//       <div>
-//          <strong>Email</strong>
-//          <span>$product->email</span>
-//       </div>
-//       <div>
-//          <strong>Classes</strong>
-//          <span>$classes</span>
-//       </div>
-//    </div>
-// </div>
-// <form class="col-xs-12 col-md-8" method="post" action="{$_SERVER['PHP_SELF']}?id=$id&crud=$createorupdate">
-//    <div class="card soft">
-//       <h2>$addoredit Product</h2>
-//       <input type="hidden" name="id" value="$id">
-//       <div class="form-control">
-//          <label class="form-label" for="product-name">Name</label>
-//          <input class="form-input"type="text" id="product-name" name="product-name" value="$product->name">
-//       </div>
-//       <div class="form-control">
-//          <label class="form-label" for="product-type">Type</label>
-//          <input class="form-input"type="text" id="product-type" name="product-type" value="$product->type">
-//       </div>
-//       <div class="form-control">
-//          <label class="form-label" for="product-email">Email</label>
-//          <input class="form-input"type="email" id="product-email" name="product-email" value="$product->email">
-//       </div>
-//       <div class="form-control">
-//          <label class="form-label" for="product-classes">Classes</label>
-//          <input class="form-input"type="text" id="product-classes" name="product-classes" value="$classes">
-//       </div>
-//       <div class="form-control">
-//          <input class="form-button" type="submit" value="Submit">
-//       </div>
-//    </div>
-// </form>
-// </div>
-// HTML;
-// }
-
 
 
 function productListItem($r,$product) {
@@ -156,12 +51,12 @@ return $r.<<<HTML
 <div class="card-section">
    <div class="display-flex">
       <div class="flex-none">
-        <div class="product card bottom soft" style="background-image:url($product->image)">
+        <div class="product card small soft" style="background-image:url($product->image)"></div>
       </div>
       <div class="flex-stretch">$product->name</div>  
       <div class="flex-none">
-         <a href="product_item.php?id=$product->id" class="form-button">Visit</a>
-         <a href="{$_SERVER['PHP_SELF']}?id=$product->id" class="form-button">Edit</a>
+         <a href="product_item.php?id=$product->id" class="form-button small">Visit</a>
+         <a href="{$_SERVER['PHP_SELF']}?id=$product->id" class="form-button small">Edit</a>
       </div>  
    </div>
 </div>
@@ -192,7 +87,7 @@ echo <<<HTML
 </div>
 <div class="col-xs-12 col-md-4">
    <div class="card soft">
-      <h2>$product->name</h2>
+      <h4>$product->name</h4>
       <div>
          <strong>Price</strong>
          <span>&dollar;$product->price</span>
@@ -207,9 +102,9 @@ echo <<<HTML
       </div>
       <div>
          <strong>Image</strong>
-         <div class="image-thumbs">
-            <img src="product->image">
-         </div>
+         
+           <div class="product card small soft" style="background-image:url($product->image)"></div>
+         
       </div>
      <div>
          <strong>Quantity</strong>

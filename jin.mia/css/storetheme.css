@@ -137,6 +137,7 @@ body {
 
 .card.samll {
   height: 20vh;
+  width:  10vw;
 }
 /*
 [class*='col-']>.card{
@@ -320,4 +321,3 @@ p {
 .navbar .badge:empty {
    display:none;
 }
-

@@ -36,7 +36,8 @@ return $r.<<<HTML
  <div class="grid grid-justify-around">
  <div class="col-sm-12 col-md-3">
   <div class="product card samll soft" style="background-image:url($o->image)"></div>
-  </div>
+
+</div>
  
 
 
@@ -70,6 +71,7 @@ return $r.<<<HTML
     </div>
    </div>
 </div>
+
 </div>
 HTML;
 }
@@ -112,7 +114,7 @@ return <<<HTML
       <strong>Taxes</strong>
    </div>
    <div class="flex-none">&dollar;$tax</div>
-</div><hr>
+</div>
 <div class="card-section display-flex">
    <div class="flex-stretch">
       <strong>Total</strong>

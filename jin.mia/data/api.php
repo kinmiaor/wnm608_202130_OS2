@@ -91,14 +91,16 @@ function makeStatement($type) {
                `date_modify` = NOW()
             WHERE `id` = ?
             ");
-         $stmt->bind_param("s",$_POST['product-name']);
-         $stmt->bind_param("d",$_POST['product-price']);
-         $stmt->bind_param("s",$_POST['product-category']);
-         $stmt->bind_param("s",$_POST['product-image']);
-         $stmt->bind_param("s",$_POST['product-description']);
-         $stmt->bind_param("i",$_POST['product-quantity']);
-         $stmt->bind_param("i",$_POST['id']
-        );
+         
+        $stmt->bind_param("sdsssii",
+            $_POST['product-name'],
+            $_POST['product-price'],
+            $_POST['product-category'],
+            $_POST['product-image'],
+            $_POST['product-description'],
+            $_POST['product-quantity'],
+            $_POST['id']
+         );
          $stmt->execute();
          break;
 
