@@ -34,15 +34,15 @@ $amountselect = selectAmount($o->amount,10);
 return $r.<<<HTML
 <div class="container">
  <div class="grid grid-justify-around">
- <div class="col-sm-12 col-md-3">
+ <div class="col-sm-12 col-md-4">
   <div class="product card samll soft" style="background-image:url($o->image)"></div>
 
 </div>
  
 
 
-   <div class="col-sm-12 col-md-5">
-    <div class="card flat">
+   <div class="col-sm-12 col-md-4">
+    <div class="card flat" style="background-color: #e8edea;">
      <div class="card-section">
       <h4>$o->name</h4>
       <form action="product_actions.php?crud=delete-cart-item" method="post" style="font-size:0.8em">
@@ -64,14 +64,14 @@ return $r.<<<HTML
    </div>
 
    <div class="col-sm-12 col-md-3">
-    <div class="card flat">
+    <div class="card flat" style="background-color: #e8edea;">
      <div class="card-section">
        <h4>&dollar;$o->total</h4>
      </div>
     </div>
    </div>
 </div>
-
+<hr>
 </div>
 HTML;
 }

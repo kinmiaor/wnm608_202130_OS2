@@ -24,6 +24,21 @@ body {
   text-align: center;
  
 }
+
+.filter {
+  background-color: none;
+  border:none;
+  color:  var(--color-main-medium);
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 0.8em;
+  margin-left: 0.5em;
+  margin-bottom: 2em;
+  border-radius: 4px;
+  text-align: center;
+ 
+}
+
 .center {
   text-align: center;
 }

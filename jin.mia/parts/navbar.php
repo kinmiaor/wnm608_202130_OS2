@@ -6,12 +6,12 @@
       <div class="flex-stretch"></div>
       <nav class="flex-none nav flex">
          <ul>
-            <li><a href="index.php">HOME</a></li>
-            <li><a href="product_list.php">SHOP</a></li>
-            <li><a href="aboutus.php">ABOUT</a></li>
-            <li><a href="admin/index.php">ADMIN</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="product_list.php">Shop</a></li>
+            <li><a href="aboutus.php">About</a></li>
+            <li><a href="admin/index.php">Admin</a></li>
             <li><a href="product_cart.php">
-            <span>CART</span>
+            <span>Cart</span>
             <span class="badge"><?= makeCartBadge() ?></span>
          </a></li>
          </ul>

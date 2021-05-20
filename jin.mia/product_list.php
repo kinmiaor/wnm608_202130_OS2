@@ -57,23 +57,20 @@ if(isset($_GET['t'])) {
   </div>
 
 <div class="container grid-justify-around" style="margin-top: 0">
-    <div class="grid">
-    <div class="col-xs-12 col-md-10">
-     <form action="product_list.php" method="get" class="hotdog" style="margin-top:4em">
+   
+ <div class="grid">
+    <div class="col-xs-12 col-md-9" style="margin-top:4em">
+       <form action="product_list.php" method="get" class="hotdog">
          <input type="hidden" name="t" value="search">
          <input type="hidden" name="d" value="<?=$_GET['d']?>">
          <input type="hidden" name="o" value="<?=$_GET['o']?>">
          <input type="hidden" name="l" value="<?=$_GET['l']?>">
          <input type="search" name="s" placeholder="Search" value="<?= $_GET['s'] ?>">
       </form>
-    </div>
-
-    <!--   <div>
-         <a href="product_list.php?t=products_by_category&category=fruit&d=<?=$_GET['d']?>&o=<?=$_GET['o']?>&l=<?=$_GET['l']?>&s=<?=$_GET['s']?>" class="button inline">Fruit</a>
-         <a href="product_list.php?t=products_by_category&category=vegetable&d=<?=$_GET['d']?>&o=<?=$_GET['o']?>&l=<?=$_GET['l']?>&s=<?=$_GET['s']?>" class="button inline">Vegetable</a>
-      </div> -->
-     <div class="col-xs-12 col-md-2">
-       <form action="product_list.php" method="get" style="margin-top:3em">
+  </div>
+    
+     <div class="col-xs-12 col-md-3">
+       <form action="product_list.php" method="get" style="margin-top:4em; margin-left: 2em">
          <input type="hidden" name="t" value="search">
          <input type="hidden" name="s" value="<?=$_GET['s']?>">
          <input type="hidden" name="d" value="<?=$_GET['d']?>">
@@ -86,7 +83,14 @@ if(isset($_GET['t'])) {
          </div>
       </form>
     </div>
+    
+    <div class="col-xs-12 col-md-3" style="margin-top:1em">
+         <a href="product_list.php?t=products_by_category&category=skincare&d=<?=$_GET['d']?>&o=<?=$_GET['o']?>&l=<?=$_GET['l']?>&s=<?=$_GET['s']?>" class="filter inline">Skinkcare</a>
+         <a href="product_list.php?t=products_by_category&category=eyecare&d=<?=$_GET['d']?>&o=<?=$_GET['o']?>&l=<?=$_GET['l']?>&s=<?=$_GET['s']?>" class="filter inline">Eyecare</a>
+       </div>
+
   </div>
+   
  </div>
  
 <div class="containerwide grid-justify-around" style="margin-top: 0">
@@ -106,36 +110,6 @@ if(isset($_GET['t'])) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 
-   <div class="container">
-      <div class="card soft">
-         <ul> -->
-            <!-- li*10>a[href='?id=$]'>{Product $} -->
-           <!--  <li><a href="product_item.php?id=1">Product 1</a></li>
-            <li><a href="product_item.php?id=2">Product 2</a></li>
-            <li><a href="product_item.php?id=3">Product 3</a></li>
-            <li><a href="product_item.php?id=4">Product 4</a></li>
-            <li><a href="product_item.php?id=5">Product 5</a></li>
-            <li><a href="product_item.php?id=6">Product 6</a></li>
-            <li><a href="product_item.php?id=7">Product 7</a></li>
-            <li><a href="product_item.php?id=8">Product 8</a></li>
-            <li><a href="product_item.php?id=9">Product 9</a></li>
-            <li><a href="product_item.php?id=10">Product 10</a></li>
-         </ul>
-      </div>
-   </div> -->
   <?php include "parts/footer.php" ?>
 
 </body>

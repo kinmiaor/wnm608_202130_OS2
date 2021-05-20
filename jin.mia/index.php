@@ -141,9 +141,15 @@
   </div>
 
 
+   <!--  <div class="view-window display-flex flex-align-center flex-justify-center" style="background-image:url(img/ad0.jpeg);">
+      
+    </div>
+
+ -->
+
+
+
    <?php include "parts/footer.php" ?>
-
-
 
 
 

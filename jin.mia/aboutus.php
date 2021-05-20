@@ -45,17 +45,19 @@ include "parts/templates.php";
       
        <div class="col-sm-12 col-md-6">
         <h2>It all started with a  dream...</h2>
-       <h4>In 2015, Mia was Chinese immigrants living in Seattle, and she saw the need for beauty that was both effective and indulgent. She started dreaming about opening a shop that offered natural products from around the world, where the ambience was friendly like the food bazaars of Europe. With that, Little Green House was born. Mia opened a store that instantly engaged their community, touching people’s hearts as well as their skin. The first product was a soap that they hand-wrapped themselves.</h4>
+       <div class="foodertext">In 2015, Mia was Chinese immigrants living in Seattle, and she saw the need for beauty that was both effective and indulgent. She started dreaming about opening a shop that offered natural products from around the world, where the ambience was friendly like the food bazaars of Europe. With that, Little Green House was born. Mia opened a store that instantly engaged their community, touching people’s hearts as well as their skin. The first product was a soap that they hand-wrapped themselves.</div>
      
      </div>
 </div>
 </div>
 
 
-   <div class="container" style="text-align: center, border:none">
-   	<video width="1223" height="768" controls>
+   <div class="containerwide" style="text-align: center, border:none">
+   	<div class="center">
+    <video width="1223" height="768" controls>
    		<source src="img/logo_video.mp4" type="video/mp4">
    	</video>
+   </div>
    </div>
 
 

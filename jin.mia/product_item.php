@@ -1,5 +1,6 @@
 <?php
 include "lib/php/functions.php";
+include "parts/templates.php";
 include "data/api.php";
 
 $product = makeStatement("product_by_id")[0];
@@ -73,36 +74,24 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
     <h2>You May Also Like</h2>
    </div>
 
-   <div class="containerwide grid-justify-around">
+     <div class="containerwide grid-justify-around">
       <div class="grid">
-     <!--  <div class="col-md-1"></div> -->
-      <div class="col-sm-6 col-md-3">
-        <div id="product6" class="product card bottom soft" style="background-image:url(img/product4.jpg)"></div>
-        <h5>Black Tea Face Oil</h5>
-        <h5>$ 30.00</h5>
-         <div class="center"><a href="product_list.php" class="button col-sm-6 col-md-3">VIEW MORE</a></div>
-      </div>
-   
-      <div class="col-sm-6 col-md-3">
-        <div id="product7" class="product card bottom soft col-sm-6 col-md-3" style="background-image:url(img/product5.jpg)"></div>
-        <h5>Daisy Face Oil</h5>
-        <h5>$ 30.00</h5>
-         <div class="center"><a href="product_list.php" class="button col-sm-6 col-md-3">VIEW MORE</a></div>
-     </div>
-     <div class="col-sm-6 col-md-3">
-        <div id="product8" class="product card bottom soft col-sm-6 col-md-3" style="background-image:url(img/product6.jpg)"></div>
-        <h5>Butter Sleeping Mask</h5>
-        <h5>$ 30.00</h5>
-        <div class="center"><a href="product_list.php" class="button col-sm-6 col-md-3">VIEW MORE</a></div>
-     </div>
-     <div class="col-sm-6 col-md-3">
-        <div id="product9" class="product card bottom soft col-sm-6 col-md-3" style="background-image:url(img/product7.jpg)"></div>
-        <h5>Volcanic Mud Face Mask</h5>
-        <h5>$ 30.00</h5>
-       <div class="center"><a href="product_list.php" class="button col-sm-6 col-md-3">VIEW MORE</a></div>
-     </div>
     
-      </div>
+   
+   <? 
+
+   $products = MYSQLIQuery("
+      SELECT *
+      FROM `products`
+      WHERE `category` = 'skincare'
+      LIMIT 4
+   ");
+
+   // pretty_dump($recommended);
+   echo array_reduce($products,'makeProductList');
+
+   ?>
+
    </div>
   </div>
 
