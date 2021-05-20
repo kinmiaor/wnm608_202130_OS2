@@ -56,10 +56,18 @@ if(isset($_GET['t'])) {
   <div class="view-window display-flex flex-align-center flex-justify-center window-shrink" style="background-image:url(img/ad5.jpeg)">
   </div>
 
-<div class="container grid-justify-around" style="margin-top: 0">
-   
+<div class="containerwide grid-justify-around" style="margin-top: 0">
+ 
+<h4 style="margin-bottom:0em">Category</h4>
+
  <div class="grid">
-    <div class="col-xs-12 col-md-9" style="margin-top:4em">
+    
+ <div class="col-xs-12 col-md-6" style="margin-top:2em">
+         <a href="product_list.php?t=products_by_category&category=skincare&d=<?=$_GET['d']?>&o=<?=$_GET['o']?>&l=<?=$_GET['l']?>&s=<?=$_GET['s']?>" class="filter inline">Skinkcare</a>
+         <a href="product_list.php?t=products_by_category&category=eyecare&d=<?=$_GET['d']?>&o=<?=$_GET['o']?>&l=<?=$_GET['l']?>&s=<?=$_GET['s']?>" class="filter inline">Eyecare</a>
+       </div>
+
+    <div class="col-xs-12 col-md-9" style="margin-top:1em">
        <form action="product_list.php" method="get" class="hotdog">
          <input type="hidden" name="t" value="search">
          <input type="hidden" name="d" value="<?=$_GET['d']?>">
@@ -70,7 +78,7 @@ if(isset($_GET['t'])) {
   </div>
     
      <div class="col-xs-12 col-md-3">
-       <form action="product_list.php" method="get" style="margin-top:4em; margin-left: 2em">
+       <form action="product_list.php" method="get" style="margin-top:1em; margin-left: 2em">
          <input type="hidden" name="t" value="search">
          <input type="hidden" name="s" value="<?=$_GET['s']?>">
          <input type="hidden" name="d" value="<?=$_GET['d']?>">
@@ -84,10 +92,7 @@ if(isset($_GET['t'])) {
       </form>
     </div>
     
-    <div class="col-xs-12 col-md-3" style="margin-top:1em">
-         <a href="product_list.php?t=products_by_category&category=skincare&d=<?=$_GET['d']?>&o=<?=$_GET['o']?>&l=<?=$_GET['l']?>&s=<?=$_GET['s']?>" class="filter inline">Skinkcare</a>
-         <a href="product_list.php?t=products_by_category&category=eyecare&d=<?=$_GET['d']?>&o=<?=$_GET['o']?>&l=<?=$_GET['l']?>&s=<?=$_GET['s']?>" class="filter inline">Eyecare</a>
-       </div>
+   
 
   </div>
    

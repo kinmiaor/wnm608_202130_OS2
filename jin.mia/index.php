@@ -37,27 +37,27 @@
       <div class="grid grid-justify-around">
       
       <div class="col-sm-12 col-md-4" >
-       <div class="product card top soft" style="background-image:url(img/product1.jpg)"></div>
+        <a href="product_item.php?id=1"> <div class="product card top soft" style="background-image:url(img/product1.jpg)"></div></a>
        <h5>Deep Hydration Moisturizer</h5>
        <h6>Smoothes & softens</h6>
        <h5>$ 45.00</h5>
-       <div class="center"><a href="product_list.php" class="button">VIEW MORE</a></div>
+       
       </div>
       
       <div class="col-sm-12 col-md-4">
-       <div class="product card top soft" style="background-image:url(img/product2.jpg) "></div>
+        <a href="product_item.php?id=2"><div class="product card top soft" style="background-image:url(img/product2.jpg) "></div></a>
        <h5>Green Tea Skincare Set</h5>
        <h6>Value of $168</h6>
        <h5>$ 119.00</h5>
-       <div class="center"><a href="product_list.php" class="button">VIEW MORE</a></div>
+       
      </div>
        
       <div class="col-sm-12 col-md-4"> 
-       <div class="product card top soft" style="background-image:url(img/product3.jpg)"></div>
+        <a href="product_item.php?id=15"><div class="product card top soft" style="background-image:url(img/product3.jpg)"></div></a>
         <h5>Honey Face Mask</h5>
         <h6>Firms for a lifted look</h6>
         <h5>$ 35.00</h5>
-         <div class="center"><a href="product_list.php" class="button">VIEW MORE</a></div>
+        
       </div>
         
       </div>
@@ -82,7 +82,7 @@
            <h3>The Story Behind Us</h3>
            <div class="foodertext">We are driven by our never complacent indie spirit where the sky's the limit. This approach is initiated by Mia lived by the entire organization. Our boundless curiosity fuels our search for the extraordinary, whether it’s a moment of pleasure in nature or an experience of generosity in our house. Where green goes, beauty follows. We’re pioneers—in product, in experience, in culture, and in process. We believe that green house is more than what it sells; it’s the emotional connection to the brand that we call the sixth sense. It’s the heartfelt experience we craft for our people and our guests.</div>
          
-       <div class="center" style="margin-top: 2em"><a href="product_list.php" class="borderbutton">EXPLORE NOW</a></div>
+       <div class="center" style="margin-top: 2em"><a href="product_list.php" class="button">EXPLORE NOW</a></div>
         
        </div>
     
@@ -111,29 +111,29 @@
       <div class="grid">
      <!--  <div class="col-md-1"></div> -->
       <div class="col-sm-6 col-md-3">
-        <div id="product6" class="product card bottom soft" style="background-image:url(img/product4.jpg)"></div>
+         <a href="product_item.php?id=4"><div id="product6" class="product card bottom soft" style="background-image:url(img/product4.jpg)"></div></a>
         <h5>Black Tea Face Oil</h5>
         <h5>$ 30.00</h5>
-         <div class="center"><a href="product_list.php" class="button col-sm-6 col-md-3">VIEW MORE</a></div>
+         
       </div>
    
       <div class="col-sm-6 col-md-3">
-        <div id="product7" class="product card bottom soft col-sm-6 col-md-3" style="background-image:url(img/product5.jpg)"></div>
+         <a href="product_item.php?id=5"><div id="product7" class="product card bottom soft col-sm-6 col-md-3" style="background-image:url(img/product5.jpg)"></div></a>
         <h5>Daisy Face Oil</h5>
         <h5>$ 30.00</h5>
-         <div class="center"><a href="product_list.php" class="button col-sm-6 col-md-3">VIEW MORE</a></div>
+        
      </div>
      <div class="col-sm-6 col-md-3">
-        <div id="product8" class="product card bottom soft col-sm-6 col-md-3" style="background-image:url(img/product6.jpg)"></div>
+         <a href="product_item.php?id=6"><div id="product8" class="product card bottom soft col-sm-6 col-md-3" style="background-image:url(img/product6.jpg)"></div></a>
         <h5>Butter Sleeping Mask</h5>
         <h5>$ 30.00</h5>
-        <div class="center"><a href="product_list.php" class="button col-sm-6 col-md-3">VIEW MORE</a></div>
+        
      </div>
      <div class="col-sm-6 col-md-3">
-        <div id="product9" class="product card bottom soft col-sm-6 col-md-3" style="background-image:url(img/product7.jpg)"></div>
+         <a href="product_item.php?id=7"><div id="product9" class="product card bottom soft col-sm-6 col-md-3" style="background-image:url(img/product7.jpg)"></div></a>
         <h5>Volcanic Mud Face Mask</h5>
         <h5>$ 30.00</h5>
-       <div class="center"><a href="product_list.php" class="button col-sm-6 col-md-3">VIEW MORE</a></div>
+       
      </div>
     
       </div>

@@ -54,13 +54,32 @@ body {
 }
 
 .filter {
-  background-color: none;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+  background-color:#e8edea;
   border:none;
-  color:  var(--color-main-medium);
+  color: var(--color-main-medium);
   padding: 10px 16px;
   text-decoration: none;
   font-size: 0.8em;
-  margin-left: 0.5em;
+  margin-top: 0em;
+  margin-left: 0em;
+  margin-bottom: 2em;
+  border-radius: 4px;
+  text-align: center;
+ 
+}
+
+
+.filter:hover {
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+  background-color:var(--color-main-light);
+  border:none;
+  color: var(--color-main-dark);
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 0.8em;
+  margin-top: 0em;
+  margin-left: 0em;
   margin-bottom: 2em;
   border-radius: 4px;
   text-align: center;
