@@ -23,7 +23,8 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
 <body>
    <?php include "parts/navbar.php" ?>
    <hr>
-   
+
+
     <div class="container">
       <div class="grid gap product-display">
          <div class="col-xs-12 col-md-7">

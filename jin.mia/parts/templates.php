@@ -34,28 +34,22 @@ $amountselect = selectAmount($o->amount,10);
 return $r.<<<HTML
 <div class="container">
  <div class="grid grid-justify-around">
- <div class="col-sm-12 col-md-4">
-  <div class="product card samll soft" style="background-image:url($o->image)"></div>
+ <div class="col-sm-6 col-md-3">
+  <div class="product card small soft" style="background-image:url($o->image)"></div>
 
 </div>
  
 
 
-   <div class="col-sm-12 col-md-4">
-    <div class="card flat" style="background-color: #e8edea;">
-     <div class="card-section">
-      <h4>$o->name</h4>
-      <form action="product_actions.php?crud=delete-cart-item" method="post" style="font-size:0.8em">
-         <input type="hidden" name="id" value="$o->id">
-        <input type="submit" value="delete" class="button">
-      </form>
-     </div>
-    </div>
+   <div class="col-sm-6 col-md-3">
+  
+    <h6>$o->name</h6>
+   
    </div>
  
 
-   <div class="col-sm-12 col-md-1">
-     <form action="product_actions.php?crud=update-cart-item" method="post" onchange="this.submit()" style="font-size:0.8em;margin-top: 5.5em">
+   <div class="col-sm-6 col-md-2">
+     <form action="product_actions.php?crud=update-cart-item" method="post" onchange="this.submit()" style="font-size:0.8em;margin-top: 2.2em">
          <input type="hidden" name="id" value="$o->id">
          <div class="form-select">
             $amountselect
@@ -63,13 +57,21 @@ return $r.<<<HTML
       </form>
    </div>
 
-   <div class="col-sm-12 col-md-3">
+   <div class="col-sm-6 col-md-2">
     <div class="card flat" style="background-color: #e8edea;">
-     <div class="card-section">
-       <h4>&dollar;$o->total</h4>
-     </div>
+   
+       <h6>&dollar;$o->total</h6>
+  
     </div>
    </div>
+ <div class="col-sm-6 col-md-2">
+    <div class="center">
+     <form action="product_actions.php?crud=delete-cart-item" method="post">
+         <input type="hidden" name="id" value="$o->id">
+        <input type="submit" value="delete" class="smallbutton">
+      </form>
+    </div>
+</div>
 </div>
 <hr>
 </div>

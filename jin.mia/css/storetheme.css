@@ -25,6 +25,20 @@ body {
  
 }
 
+
+.smallbutton {
+  background-color: var(--color-main-medium);
+  border:none;
+  color: var( --color-white);
+  padding: 5px 10px;
+  text-decoration: none;
+  font-size: 0.8em;
+  margin-top: 2.3em;
+  border-radius: 4px;
+  text-align: center;
+ 
+}
+
 .filter {
   background-color: none;
   border:none;
