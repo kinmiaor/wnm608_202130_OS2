@@ -20,7 +20,7 @@ include "parts/templates.php";
     </div>
   
 
- <div class="containerwide">
+ <div class="containerwide" style="padding: 1em">
      
       <div class="grid grid-justify-around">
       <div class="col-sm-12 col-md-4" >
@@ -35,7 +35,7 @@ include "parts/templates.php";
 </div>
 </div>
 
- <div class="containerwide">
+ <div class="containerwide" style="padding:1em">
      
       <div class="grid grid-justify-around">
       <div class="col-sm-12 col-md-6" >

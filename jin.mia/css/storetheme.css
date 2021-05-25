@@ -384,3 +384,52 @@ p {
 .navbar .badge:empty {
    display:none;
 }
+
+
+.nav-toggle label {
+   display:none;
+}
+
+
+
+
+@media (max-width:1000px) {
+   .container {
+      padding-left:10px;
+      padding-right:10px;
+   }
+}
+@media (max-width:500px) {
+   :root {
+      --header-height:3rem;
+   }
+
+   .navbar .container {
+      flex-wrap:wrap;
+   }
+   .navbar .nav {
+      display:none;
+   }
+   .nav-toggle label {
+      display:block;
+      padding:0 0.5em;
+   }
+   #nav-toggle:checked + .navbar .nav {
+      display:block;
+      width:100%;
+   }
+   #nav-toggle:checked + .navbar .nav ul {
+      display:block;
+      line-height: 2;
+      padding-bottom: 0.5em;
+   }
+}
+
+
+
+
+
+
+
+
+

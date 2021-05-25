@@ -1,9 +1,14 @@
+ <input type="checkbox" class="hidden" id="nav-toggle">
  <header class="navbar">
    <div class="container display-flex flex-align-center" style="margin-top: 0">
       <div class="flex-none">
          <div class="brand">LITTLE GREEN HOUSE</div>
       </div>
       <div class="flex-stretch"></div>
+      <div class="flex-none nav-toggle">
+         <label style="font-size: 2em" for="nav-toggle">&equiv;</label>
+        <!-- <img src="img/list.svg"> -->
+      </div>
       <nav class="flex-none nav flex">
          <ul>
             <li><a href="index.php">Home</a></li>

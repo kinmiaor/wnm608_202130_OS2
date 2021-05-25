@@ -534,7 +534,7 @@ a:hover {
 
 .foodertext {
    text-aling: left;
-   font-family:Avenir Next;
+   font-family: ‘Avenir Next’;
    color: var(--color-main-dark);
    font-size: 1em;
    line-height: 2em;

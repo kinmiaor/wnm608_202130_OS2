@@ -24,7 +24,7 @@ include "parts/templates.php";
 
             <div class="col-xs-12 col-md-5">
              <div class="form-control">
-            <input id="example3" type="text" placeholder="Email" class="form-input">
+            <input id="example3" type="email" placeholder="Email" class="form-input">
             </div>
          </div>
 

@@ -1,13 +1,14 @@
 
 <div class="footer-inner">
-   <div class="containerwide grid-justify-around">
+   <div class="containerwide grid-justify-around" style="padding: 2em">
 		<div class="grid gap">
-			<div class="col-sm-6 col-md-3" style="margin-right: 6em">
+			<div class="col-sm-6 col-md-3">
 				<h5 style="text-align: left">JOIN US TODAY</h5>
 				<div class="subtitle">New Subscribers Receive 15% Off</div>
-				<div class="form-control">
-                <input id="example3" type="text" placeholder="subscrib@gmail.com" class="form-input">
+				<div class="form-control" style="width:60%">
+                <input id="example3" type="email" placeholder="subscrib@gmail.com" class="form-input">
                 </div>
+                <a class="smallbutton" href="#">Subscrib</a>
             </div>
  
            <div class="col-sm-6 col-md-3">
@@ -34,8 +35,10 @@
 			
             </div>
 	   </div>
+	</div>
+     
      <div class="subtitle" style="text-align: center; margin-top:3em">Copyright 2021@ Mia jin</div>
 
 
 		</div>
-	</div>
+
