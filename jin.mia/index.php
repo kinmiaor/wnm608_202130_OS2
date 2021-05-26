@@ -12,6 +12,8 @@
 <body>
    <?php include "parts/navbar.php" ?>
 
+   
+ <!--  <p class="text-center" style="display:block;color:white;background-color:#3c4f43;margin:0;padding:15px;">Join us today, enjoy 15% off in entire house. <a style="font-family: Avenir Next;font-size:0.8em;text-decoration: underline">Shop Now</a></p> -->
    <div class="view-window display-flex flex-align-center flex-justify-center window-shrink" style="background-image:url(img/ad.jpg)">
        <!--   <h2 class="h2-shrink" >NATRUAL & FRESH</h2> -->
 
