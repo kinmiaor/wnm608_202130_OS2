@@ -30,7 +30,7 @@ include "parts/templates.php";
 
             <div class="col-xs-12 col-md-4" style="margin-top:1em">
            
-            <a class="smallbutton" href="#">Subscrib</a>
+            <a class="smallbutton" href="#">Subscribe</a>
          </div>
     </div>
   

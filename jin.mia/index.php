@@ -84,7 +84,7 @@
            <h3>The Story Behind Us</h3>
            <div class="foodertext" style="padding: 2em">We are driven by our never complacent indie spirit where the sky's the limit. This approach is initiated by Mia lived by the entire organization. Our boundless curiosity fuels our search for the extraordinary, whether it’s a moment of pleasure in nature or an experience of generosity in our house. Where green goes, beauty follows. We’re pioneers—in product, in experience, in culture, and in process. We believe that green house is more than what it sells; it’s the emotional connection to the brand that we call the sixth sense. It’s the heartfelt experience we craft for our people and our guests.</div>
          
-       <div class="center" style="margin-top: 2em"><a href="product_list.php" class="button">EXPLORE NOW</a></div>
+       <div class="center" style="margin-top: 2em"><a href="aboutus.php" class="button">LEARN MORE</a></div>
         
        </div>
     

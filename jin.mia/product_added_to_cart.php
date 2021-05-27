@@ -32,9 +32,9 @@ $cart_product = cartItemById($product->id);
             <h3><?= $cart_product->amount ?> <?= $product->name ?> In Your Cart</h3>
 
             <div class="display-flex">
-               <div class="flex-none"><a class="form-button" href="javascript:window.history.back();">Back To Product</a></div>
+               <div class="flex-none"><a class="form-button" href="javascript:window.history.back();">Continue Shopping</a></div>
                <div class="flex-stretch"></div>
-               <div class="flex-none"><a class="form-button" href="product_list.php">Continue Shopping</a></div>
+               <div class="flex-none"><a class="form-button" href="product_cart.php">Check Out</a></div>
             </div>
             <?
          }

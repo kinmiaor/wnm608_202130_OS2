@@ -55,20 +55,22 @@ h2 {
    color: var(--color-main-dark);
    font-family:var(--font-serif);
    font-size: 2em;
+    line-height: 1em;
 }
 h3 {
    font-family: var(--font-serif);
    font-size: 1.5em;
    text-align: center;
-   line-height: 1.5em;
+   line-height: 1em;
    color: var(--color-main-dark);
+   padding: 0.5em;
 }
 
 h4 {
    font-family: var(--font-serif);
    font-size: 1.2em;
    text-align: left;
-   line-height: 1.5em;
+   line-height: 1em;
    color: var(--color-main-dark);
 }
 h5 {
@@ -76,7 +78,7 @@ h5 {
    color: var(--color-main-dark);
    font-size: 1em;
    text-align: center;
-   line-height: 1.5em;
+   line-height: 0.5em;
 }
 h6 {
    font-family:var(--font-serif);
@@ -84,7 +86,8 @@ h6 {
    font-size: 0.8em;
    font-weight: lighter;
    text-align: center;
-   line-height: 1.5em;
+   line-height: 0em;
+   padding: 0.5em;
 }
 
 a {

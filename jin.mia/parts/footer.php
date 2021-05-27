@@ -6,9 +6,9 @@
 				<h5 style="text-align: left">JOIN US TODAY</h5>
 				<div class="subtitle">New Subscribers Receive 15% Off</div>
 				<div class="form-control" style="width:60%">
-                <input id="example3" type="email" placeholder="subscrib@gmail.com" class="form-input">
+                <input id="example3" type="email" placeholder="subscribe@gmail.com" class="form-input">
                 </div>
-                <a class="smallbutton" href="#">Subscrib</a>
+                <a class="smallbutton" href="#">Subscribe</a>
             </div>
  
            <div class="col-sm-6 col-md-3">
